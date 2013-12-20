@@ -77,6 +77,13 @@ Paul Wilson (U. Wisconsin - Madison)
 
 --------
 
+Overheads:
+
+GWU: 52.5%
+UCB: http://www.spo.berkeley.edu/policy/fa.html
+
+--------
+
 From Myles Boylan (NSF program officer):
 
 The program description is purposefully very brief, because the intent
