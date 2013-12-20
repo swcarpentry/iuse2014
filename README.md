@@ -79,8 +79,9 @@ Paul Wilson (U. Wisconsin - Madison)
 
 Overheads:
 
-GWU: 52.5%
-UCB: http://www.spo.berkeley.edu/policy/fa.html
+*   GWU: 52.5%
+*   UCB: http://www.spo.berkeley.edu/policy/fa.html
+*   UWM: The indirect rate at UW-Madison is 50.5%.  When UW subcontracts to others, we only scrape indirect on the first 25k.
 
 --------
 
