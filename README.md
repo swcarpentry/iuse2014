@@ -1,3 +1,7 @@
+# IUSE Proposal
+
+## Proposal
+
 [Software Carpentry](http://software-carpentry.org) is a volunteer
 organization backed by Mozilla and the Sloan Foundation whose aim is
 to teach scientists the basic computing skills they need to get more
@@ -61,31 +65,50 @@ If this proposal is successful, we will use funds to:
    them compared with non-participant peers, and to assess and improve
    our instructional techniques.
 
---------
+## People
 
-People:
+*   [Lorena Barba](http://lorenabarba.com/) (George Washington U.)
+*   [C. Titus Brown](http://ged.msu.edu/) (Michigan State U.)
+*   [Scott Collins](http://temperate.lternet.edu/collins/) (U. New Mexico)
+*   Katy Huff (UC Berkeley)
+*   Rachel Slaybaugh (UC Berkeley)
+*   [Tracy Teal](http://idyll.org/~tracyt/) (Michigan State U.)
+*   [Ethan White](http://whitelab.weecology.org/) (Utah State U.)
+*   Greg Wilson (Mozilla / Software Carpentry)
+*   [Paul Wilson](http://cnerg.github.io/) (U. Wisconsin - Madison)
 
-Lorena Barba (George Washington U.)
-C. Titus Brown (Michigan State U.)
-Scott Collins (U. New Mexico)
-Katy Huff (UC Berkeley)
-Rachel Slaybaugh (UC Berkeley)
-Tracy Teal (Michigan State U.)
-Ethan White (Utah State U.)
-Greg Wilson (Mozilla / Software Carpentry)
-Paul Wilson (U. Wisconsin - Madison)
+## Sites
 
---------
+*   George Washington U. (Lorena Barba)
+*   Michigan State U. (C. Titus Brown, Tracy Teal)
+*   Mozilla (Greg Wilson)
+*   U. New Mexico (Scott Collins)
+*   U. Wisconsin - Madison (Paul Wilson)
+*   UC Berkeley (Katy Huff)
+*   Utah State U. (Ethan White)
 
-Overheads:
+## Budget
+
+Before overheads:
+
+*   materials development: $70K/year * 0.5 time * 2 years = $70K
+*   assessment: $70K/year * 0.5 time * 4 years = $140K
+*   coordination: $50K/year * 1/12 time * 4 years = $17K (rounding up)
+*   bootcamps: 8 sites * 1 bootcamp/year * 4 years * $3K/bootcamp = $96K
+*   final report: $25K
+*   total: $348K
+
+Note: 8 sites because I'd like to run a couple at other schools every year to increase the breadth of our assessment pool.
+
+## Overheads
 
 *   GWU: 52.5%
 *   UCB: http://www.spo.berkeley.edu/policy/fa.html
 *   UWM: The indirect rate at UW-Madison is 50.5%.  When UW subcontracts to others, we only scrape indirect on the first 25k.
 
---------
+## Background
 
-From Myles Boylan (NSF program officer):
+### From Myles Boylan (NSF program officer):
 
 The program description is purposefully very brief, because the intent
 is to impose virtually no constraints on what be proposed.  We are
@@ -130,7 +153,7 @@ the budgets of the 3 sunsetted programs.  I cannot predict number of
 awards because there are no budget guidelines.  I would expect that
 the funding rate would be in the neighborhood of 20%.
 
---------
+### Other Material
 
 Check out
 [The Computational Science for Undergraduate Research Experiences (CSURE) Program](https://www.nics.tennessee.edu/CSURE-2014)
