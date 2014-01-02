@@ -97,7 +97,7 @@ Before overheads:
 *   assessment: $70K/year * 0.5 time * 4 years = $140K
 *   coordination: $50K/year * 1/12 time * 4 years = $17K (rounding up)
 *   bootcamps: 8 sites * 1 bootcamp/year * 4 years * $3K/bootcamp = $96K
-*   REU office hours: 8 sites * $26K/year * 2/52 weeks * 4 years = $ 
+*   REU office hours: 8 sites * $26K/year * 2/52 weeks * 4 years = $32K
 *   final report: $25K
 *   total: $348K
 
