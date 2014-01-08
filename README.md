@@ -98,14 +98,17 @@ faculty.  The aims of this work are to:
     graduate studies and research careers;
 
 2.  to assess the medium-term impact of that training on their work
-    and their careers; and
+    and their careers;
 
-3.  to use the results of that assessment to improve the training.
+3.  to use the results of that assessment to improve the training; and
+
+4.  to use that initial contact as a starting point for engaging
+    participants in other ongoing open science activities.
 
 More specifically, we would like to run workshops for undergraduate
-students taking part in the [NSF REU
-program](http://www.nsf.gov/crssprgm/reu) at or near the start of
-their time in the lab.  This training will help them be more
+students taking part in the
+[NSF REU program](http://www.nsf.gov/crssprgm/reu) at or near the
+start of their time in the lab.  This training will help them be more
 productive during their REU (graduate participants typically report
 that what we teach saves them a day a week), and also prepare them to
 work in a world where all aspects of science are increasingly
@@ -125,22 +128,33 @@ If this proposal is successful, we will:
 2.  Expand our assessment efforts to compare REU student outcomes with
     those of other learners, to see what impact this training has on
     them compared with non-participant peers, and to assess and
-    improve our instructional techniques.  More specifically, this
-    proposal includes full-time funding for one post-doctoral
-    researcher who will monitor participants in these workshops and
-    participants in a selected subset of our regular (graduate-level)
-    workshops for comparison purposes.
+    improve our instructional techniques.  More specifically, we will
+    employ one post-doctoral researcher to monitor participants in
+    these workshops and participants in a subset of our regular
+    (graduate-level) workshops for comparison purposes.  This
+    researcher may also explore ways in which our engagement with
+    students changes the outlook and work practices of their faculty
+    supervisors (i.e., whether there is upward knowledge transfer).
 
-3.  Hire a professional videographer in years 1 and 2 to record and
+3.  Hire one graduate student at each of the eight sites each year to
+    provide part-time technical support to workshop participants, and
+    to develop new "capstone" curricular materials aimed at specific
+    disciplines.
+
+4.  Focus part of our ongoing engagement efforts on the students who
+    have taken part in our workshops during both the remainder of
+    their undergraduate careers and afterward in order to ensure that
+    they become part of the broader open science community.  This may
+    include helping the students organize and run workshop of their
+    own in subsequent years, connecting them with other open science
+    projects, introducing them to potential graduate supervisors who
+    understand and value their new skills and outlook, etc.
+
+5.  Hire a professional videographer in years 1 and 2 to record and
     edit lectures so that we may make our core curriculum available
     under a Creative Commons license to anyone who wishes to use it
     for self-directed study or in conjunction with novel teaching
     techniques such as flipped classrooms.
-
-4.  Hire one graduate student at each of the eight sites each year to
-    provide part-time technical support to workshop participants, and
-    to develop new "capstone" curricular materials aimed at specific
-    disciplines.
 
 ## Participants
 
