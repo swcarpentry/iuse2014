@@ -232,7 +232,17 @@ FIXME: short bio
 
 ### Prof. [Ethan White](http://whitelab.weecology.org/) (Utah State University)
 
-FIXME: short bio
+Ethan White is an Associate Professor in the Department of Biology and
+the Ecology Center at Utah State University, where he studies
+ecological systems at continental to global scales. His research
+combines computational, theoretical, and empirical approaches to
+understand general patterns of biodiversity; currently, his lab is
+focused on developing and testing unified theories of biodiversity
+using large compilations of global scale data from across the
+diversity of life.  White is the recipient of the prestigious National
+Science Foundation CAREER "Young Investigators" Award and an advocate
+of open and reproducible science, and serves on the editorial boards
+of both PLOS ONE and PeerJ.
 
 ### Dr. Greg Wilson (Mozilla Science Lab / Software Carpentry)
 
