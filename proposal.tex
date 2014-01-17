@@ -1,0 +1,365 @@
+\documentclass[11pt]{article}
+
+\title{
+  Assessing the Impact of Intensive Software Skills Training
+  on Students' Scientific Careers
+}
+
+\author{
+  Rachel Slaybaugh, Lorena Barba, C. Titus Brown, Ethan White, and Paul Wilson\\
+  with\\
+  Scott Collins, Kaitlin Thaney, Tracy Teal, and Greg Wilson
+}
+
+\newcommand{\fixme}[2]{FIXME (#1): {#2}}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\section{Summary}
+
+FIXME: one-page summary
+
+\pagebreak
+
+\section{The Problem}
+
+Scientists and engineers invented electronic computers to accelerate
+their work, but two generations later, many researchers in science,
+technology, engineering, and mathematics (STEM) are still not
+\emph{computationally competent}: they do repetitive tasks manually
+instead of automating them, develop software using a methodology best
+summarized as ``copy, paste, tweak, and pray'', and fail to track
+their work in any systematic, reproducible way.
+
+Equally, while the World-Wide Web was created by a scientist to help
+his peers share information, many still use it primarily as a way to
+find and download PDFs.  Researchers may understand that open data can
+fuel new insights, but often lack the skills needed to create and
+provide a reusable data set.  Equally, any discussion of changing
+scientific publishing, make research reproducible, or using the web to
+support ``science as a service'' must eventually address the lack of
+pre-requisite skills in the general STEM research community.
+
+Since the mid-1980s (at least), proponents of computational science
+have taken an ``if we build it, they will come'' approach to this
+problem.  It is clear now, though, that learning-by-osmosis has not
+worked, and is unlikely to in future for several reasons:
+
+\begin{enumerate}
+
+\item
+  \emph{The curriculum is full.}  Undergraduate STEM programs already
+  struggle to cover material regarded as core to their field.  While
+  many scientists would agree that more material on programming,
+  reproducible research, or web-enabled science would be useful, there
+  is no consensus on what to take out to make room.
+
+\item
+  \emph{The blind leading the blind.}  Many faculty lack these skills
+  themselves, and hence are unable to pass them on.
+
+\item
+  \emph{Difficulty of assessing impact.} It is easy to say, ``This
+  discovery could not have been made without use of that
+  supercomputer.''  It is much harder to attribute specific advances
+  in science to prior training in general computing skills.
+
+\end{enumerate}
+
+The final, and possibly largest, issue is that \emph{the rewards are
+  unknown}.  Open, web-based science is still in its infancy, so there
+is no general understanding of what people might need to know in order
+to incorporate it into their research careers.  Since it is hard to
+measure something if you don't know what to look for, or if it is so
+young that there hasn't actually \emph{been} long-term impact, no
+systematic study has been to date of whether early training in the
+skills needed to practice open, web-enabled science actually has an
+impact, and if so, how and how much.  Without such feedback, there is
+no systematic way to improve the training programs that currently
+exist.
+
+\section{Related Work}
+
+\subsection{Research}
+
+Studies of how scientists use computers and the web have found that
+most scientists learn what they know about developing software and
+using computers and the web in their research through osmosis and word
+of mouth. Most training meant to address this issue:
+
+\begin{itemize}
+
+\item
+  does not target scientists' specific needs (e.g., is a general
+  ``Introduction to Computing'' class shared with students majoring in
+  other areas);
+
+\item
+  only covers the mechanics of programming in a particular language
+  rather than giving a complete picture including data management,
+  testing, publishing, and other tasks; and/or
+
+\item
+  jumps to advanced topics such as parallel computing before
+  scientists have mastered the foundations.
+
+\end{itemize}
+
+\subsection{Software Carpentry}
+
+Software Carpentry is the largest effort to date to address these
+issues. Originally created as a training program at Los Alamos
+National Laboratory in the late 1990s, it is now part of the Mozilla
+Science Lab's efforts to help scientists take advantage of ways in
+which the web can change the practice of science today, and invent new
+ways tomorrow.  Over 100 certified volunteer instructors delivered
+two-day intensive workshops to more than 4200 people in 2013 alone.
+Their ostensible subject matter usually includes:
+
+\begin{itemize}
+\item
+  the Unix shell,
+\item
+  version control with Git,
+\item
+  programming in Python or R, and
+\item
+  using SQL.
+\end{itemize}
+
+What these workshops actually seek to convey, though, is:
+
+\begin{itemize}
+\item
+  how to automate repetitive tasks,
+\item
+  how to track and share work,
+\item
+  how to grow a program in a modular, testable, reusable way, and
+\item
+  the difference is between structured and unstructured data.
+\end{itemize}
+
+Software Carpentry's curriculum and teaching practices have been
+refined via iterative design, and are informed by current research on
+teaching and learning best practices.  Its instructor training program
+introduces participants to a variety of modern teaching techniques
+(e.g., peer instruction), to concepts underlying these techniques
+(e.g., cognitive load theory), and to topic-specific work by computing
+education researchers including Guzdial \& Ericson (Georgia Tech),
+Simon (UC San Diego), and Sorva (Aalto University).  One example of
+how we translate theory into practice is our insistence on live coding
+during teaching as a way of demonstrating and transferring authentic
+practice to learners.
+
+Software Carpentry has been assessing learning outcomes and retention
+since the beginning of its Sloan Foundation-funded in January 2012.
+The first round of assessment included both qualitative and
+quantitative assessment by Dr.\ Jorge Aranda (then at the University
+of Victoria) and Prof.\ Julie Libarkin (Michigan State University).
+An attempt to scale this up in 2013 was set back by personnel changes,
+but systematic follow-ups with past participants in workshops have now
+been resumed, and we expect to be able to present preliminary results
+by mid-2014.
+
+\subsection{The Hacker Within}
+
+\fixme{PW/KH}{Please fill in.}
+
+\section{Proposed Work}
+
+This proposal builds on our success to date in enhancing the skills of
+graduate students, post-docs, and faculty.  We designed it to:
+
+\begin{enumerate}
+
+\item
+  conduct formative evaluation of the impact of software skills
+  training for undergraduates likely to continue in research careers
+  as they progress through the early stages of those careers;
+
+\item
+  conduct summative evaluation of the training's overall impact on a
+  multi-year timescale in order to improve the content and
+  presentation of the training; and
+
+\item
+  disseminate the resulting curriculum as widely as possible.
+
+\end{enumerate}
+
+More specifically, we plan to run two-day software skills workshops
+for undergraduate students taking part in the NSF's Research
+Experience for Undergraduates (REU) program each year for four years,
+at or near the start of their time in the lab.  We believe this
+training will help them be more productive during their REU
+(graduate-level participants in our existing workshops typically
+report that what we teach saves them a day a week), and also prepare
+them to work in a world where all aspects of science are increasingly
+dependent on computing.  More importantly, these undergraduates will
+serve as the treatment population for a five-year study of the impact
+of this training on their careers in general, and their involvement
+with open and web-enabled science in particular.
+
+The sections below detail the specific activities we will undertake.
+
+\subsection{Workshops}
+
+We will run two-day workshops at a steadily increasing number of sites
+each year for four years, timed to coincide with the start of the
+summer REU influx.  Each workshop will be offered to a minimum of 40
+learners per site (giving is a target study population of 1440
+students by year 4).  The content will be tailored to meet local
+needs, but will be based on what is being used at that time by
+Software Carpentry and affiliated educational efforts.  All of the
+workshop instructors will have been trained and certified by Software
+Carpentry, and will have had prior experience teaching this material.
+
+The six home sites for investigators named in this proposal (Michigan
+State U., Utah State U., George Washington U., U.\ New Mexico, UC
+Berkeley, and U.\ Wisconsin - Madison) will run workshops in each of
+those years.  Two other NSF REU sites will be added each year,
+increasing the total to 12 sites by year 4, to increase the size of
+our study population.
+
+In order to increase the diversity of the study population, we will
+additionally run at least one workshop in each of years 1-4 that is
+specifically aimed at female students.  Software Carpentry's first
+such workshop, held in Boston in June 2013, attracted 120
+participants; its second is scheduled for Lawrence Berkeley National
+Laboratory in March 2014, and at least two more will be held by the
+time work on this project commences (one in the US, and one in
+Europe).  This work will build on that experience, and draw on the
+pool of instructors who have gained mentoring experience through those
+specific workshops.
+
+Finally, we will organize an equal number of workshops specifically
+aimed at students from minority groups that are under-represented in
+STEM.  We are already in contact with the Computing Alliance for
+Hispanic-Serving Institutions (CAHSI), and with the Association of
+Public and Land-grant Universities' program for historically black
+colleges and universities (HBCUs); Software Carpentry is running its
+first workshop at an HBCU (Spelman) in early 2014, and we expect to
+have expanded these efforts by the start of this project.
+
+\subsection{Assessment}
+
+We will expand our assessment efforts to compare REU student outcomes
+with those of other learners, and to see what impact this training has
+on them compared with non-participant peers.  More specifically, we
+will employ one full-time researcher for five years to monitor
+undergraduate participants in these workshops, participants in a
+subset of our regular (graduate-level) workshops, and non-participants
+(as a control population) for comparison purposes.  This researcher
+will also explore ways in which our engagement with students changes
+the outlook and work practices of their peers and faculty supervisors,
+i.e., whether there is knowledge transfer sideways and upward.
+
+As with our work to date, assessment will use both qualitative and
+quantitative techniques.  On the qualitative side, we will conduct a
+series of interviews over the five-year period of the study to see how
+attitudes, aspirations, and activities change.  Quantitatively, we
+will measure uptake of key tools such as version control as a proxy
+for adoption of related practices, as well as exploring more
+traditional measures of research success such as progression to
+graduate school and publication/citation rates.
+
+\subsection{Community Building}
+
+We will employ one graduate student part-time at each participating
+site each year to provide technical support to workshop participants,
+and to act as an anchor for a Hacker Within-style grassroots group at
+that site.  These community liaisons will not be study subjects, but
+will help us stay in touch with students who are (a key requirement
+for any longitudinal study).
+
+Separately, the Mozilla Science Lab will focus part of its ongoing
+community engagement efforts on the students who have taken part in
+our workshops during both the remainder of their undergraduate careers
+and afterward in order to ensure that they become part of the broader
+open science community.  This may include helping the students
+organize and run workshop of their own in subsequent years, connecting
+them with other open science projects, introducing them to potential
+graduate supervisors who understand and value their new skills and
+outlook, etc.
+
+\subsection{Curriculum Development and Dissemination}
+
+We will employ one instructional designer part-time during each of the
+study's first four years to create new material, and to improve
+existing material based on feedback from workshop participants and the
+assessment program.  Here, ``creating material'' may include both
+designing and implementing new domain-specific learning modules, and
+translating existing materials into new forms, such as video
+recordings of lectures or auto-graded quizzes for self-paced
+instruction.  This work will be done in consultation with educators at
+participating institutions in order to encourage incorporation of
+those materials into existing curricula.
+
+All of the materials produced by and for this project will be made
+freely available under the Creative Commons - Attribution (CC-BY)
+license.  The instructional designer will work with the Mozilla
+Science Lab and affiliated groups to share these materials, and the
+results of our studies of the program's impact, through science
+education journals, conferences, and other channels.
+
+\section{Broader Impact}
+
+We believe this work will have significant impact in several related
+areas.
+
+\begin{enumerate}
+
+\item
+  \emph{Improving STEM education for everyone, not just participants.}
+  By creating and validating high-quality open access teaching
+  materials, and the methods used to deliver them, this project will
+  enable improvement in STEM education for everyone, everywhere, not
+  just for participating students and participating institutions.
+
+\item
+  \emph{Improving STEM education tomorrow, not just today.}  As noted
+  in the introduction of this proposal, most of today's efforts to
+  transfer computational skills to STEM researchers and connect them
+  with 21st Century innovations in how science is done are flying
+  blind: there is effectively no feedback from long-term impact to
+  instructional action.  By creating and validating such a feedback
+  loop---i.e., by showing scientists how to apply science to their
+  teaching---this project will demonstrate how STEM education can be
+  continuously improved.
+
+\item
+  \emph{Enhance economic competitiveness.} Computing is no longer
+  optional in any part of science: even scientists who don't think of
+  themselves as doing computational work rely on computers to prepare
+  papers, store data, and collaborate with colleagues.  The better
+  their computing skills are, the better able they will be to
+  contribute to the research that underpins the nation's economic
+  competitiveness.
+
+\item
+  \emph{Improve participation in STEM by women and under-represented
+    minorities.} The disproportionately low participation of women and
+  some minority groups in STEM is well documented, as is the fact that
+  computing is one of the least diverse fields within STEM.  This
+  second fact creates a vicious circle: people with weaker computing
+  skills may be less competitive in research than their peers, which
+  reduces their participation in activities viewed as non-core, which
+  in turn results in them having weaker skills.  This project will
+  strive to break this cycle by giving at-risk students an opportunity
+  to ``level up'' in a supportive environment, and by connecting them
+  with mentors who can serve as role models.
+
+\end{enumerate}
+
+\section{Career Management Plan}
+
+\fixme{EW}{Talk about the part-time grad students we're planning to hire.}
+
+\section{Data Management Plan}
+
+\fixme{TT}{Talk about curating our data.}
+
+\end{document}
