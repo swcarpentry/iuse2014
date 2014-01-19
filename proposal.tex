@@ -58,8 +58,14 @@ worked, and is unlikely to in future for several reasons:
   is no consensus on what to take out to make room.
 
 \item
-  \emph{The blind leading the blind.}  Many faculty lack these skills
-  themselves, and hence are unable to pass them on.
+  \emph{The blind leading the blind.}  Many faculty lack computational
+  skills themselves, and hence are unable to pass them on.
+
+\item
+  Scientists and software developers have different cultures,
+  different priorities, and different approaches to problem solving,
+  which often impedes collaboration and knowledge transfer
+  \cite{segal2005a}.
 
 \item
   \emph{Difficulty of assessing impact.} It is easy to say, ``This
@@ -74,7 +80,7 @@ The final, and possibly largest, issue is that \emph{the rewards are
 is no general understanding of what people might need to know in order
 to incorporate it into their research careers.  Since it is hard to
 measure something if you don't know what to look for, or if it is so
-young that there hasn't actually \emph{been} long-term impact, no
+young that there hasn't actually \emph{been} long-term impact, little
 systematic study has been done to date of whether early training in
 the skills needed to practice open, web-enabled science actually has
 an impact, and if so, how and how much.  Without such feedback, there
@@ -88,7 +94,8 @@ exist.
 Studies of how scientists use computers and the web have found that
 most scientists learn what they know about developing software and
 using computers and the web in their research through osmosis and word
-of mouth. In our experience, most training meant to address this issue:
+of mouth \cite{hannay2009,prabhu2011}. In our experience, most
+training meant to address this issue:
 
 \begin{itemize}
 
@@ -100,24 +107,27 @@ of mouth. In our experience, most training meant to address this issue:
 \item
   only covers the mechanics of programming in a particular language
   rather than giving a complete picture including data management,
-  testing, publishing, and other tasks; and/or
+  web-enabled publishing, the ``defense in depth'' approach to
+  correctness discussed in \cite{dubois2005}, or the other
+  foundational skills laid out in \cite{wilson2013}; and/or
 
 \item
   jumps to advanced topics such as parallel computing before
-  scientists have mastered the foundations.
+  scientists have mastered the foundations.  (Most research on
+  scientific computing, such as \cite{hochstein2005}, does the same.)
 
 \end{itemize}
 
 \subsection{Software Carpentry}
 
-Software Carpentry is the largest effort to date to address these
-issues. Originally created as a training program at Los Alamos
-National Laboratory in the late 1990s, it is now part of the Mozilla
-Science Lab's efforts to help scientists take advantage of ways in
-which the web can change the practice of science today, and invent new
-ways tomorrow.  Over 100 certified volunteer instructors delivered
-two-day intensive workshops to more than 4200 people in 2013 alone.
-Their ostensible subject matter usually includes:
+Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
+date to address these issues. Originally created as a training program
+at Los Alamos National Laboratory in the late 1990s, it is now part of
+the Mozilla Science Lab's efforts to help scientists take advantage of
+ways in which the web can change the practice of science today, and
+invent new ways tomorrow.  Over 100 certified volunteer instructors
+delivered two-day intensive workshops to more than 4200 people in 2013
+alone.  Their subject matter usually includes:
 
 \begin{itemize}
 \item
@@ -149,8 +159,8 @@ teaching and learning best practices.  Its instructor training program
 introduces participants to a variety of modern teaching techniques
 (e.g., peer instruction), to concepts underlying these techniques
 (e.g., cognitive load theory), and to topic-specific work by computing
-education researchers including Guzdial \& Ericson (Georgia Tech),
-Simon (UC San Diego), and Sorva (Aalto University).  One example of
+education researchers (see \cite{guzdial2010}, \cite{hazzan2011}, and
+the first third of \cite{sorva2012} for overviews.)  One example of
 how we translate theory into practice is our insistence on live coding
 during teaching as a way of demonstrating and transferring authentic
 practice to learners.
@@ -218,9 +228,10 @@ Software Carpentry and affiliated educational efforts.  All of the
 workshop instructors will have been trained and certified by Software
 Carpentry, and will have had prior experience teaching this material.
 
-The six home sites for investigators named in this proposal (Michigan
-State U., Utah State U., George Washington U., U.\ New Mexico, UC
-Berkeley, and U.\ Wisconsin - Madison) will run workshops in each of
+The home sites for investigators named in this proposal (Michigan
+State University, Utah State University, George Washington University,
+University of New Mexico, University of California -- Berkeley, and
+University of Wisconsin -- Madison) will run workshops in each of
 those years.  Two other NSF REU sites will be added each year,
 increasing the total to 12 sites by year 4, to increase the size of
 our study population.
@@ -247,16 +258,47 @@ have expanded these efforts by the start of this project.
 
 \subsection{Assessment}
 
-We will expand our assessment efforts to compare REU student outcomes
-with those of other learners, and to see what impact this training has
-on them compared with non-participant peers.  More specifically, we
-will employ one full-time researcher for five years to monitor
-undergraduate participants in these workshops, participants in a
-subset of our regular (graduate-level) workshops, and non-participants
-(as a control population) for comparison purposes.  This researcher
-will also explore ways in which our engagement with students changes
-the outlook and work practices of their peers and faculty supervisors,
-i.e., whether there is knowledge transfer sideways and upward.
+We will employ one full-time researcher for five years to monitor and
+compare undergraduate participants in these workshops, participants in
+a subset of our regular (graduate-level) workshops, and
+non-participants (as a control population).  Assessment will focus
+particularly, but not exclusively, on the following questions:
+
+\begin{enumerate}
+
+\item
+  Are students who receive this training more likely to continue to
+  graduate school than their peers?
+
+\item
+  Are students who receive this training more likely than their peers
+  to incorporate open science and/or web-enabled science tools and
+  practices into their work?
+
+\item
+  Are students who receive this training more likely than their peers
+  to choose computationally-oriented research topics and/or careers?
+  Are those who do not choose computationall-oriented paths
+  nevertheless more likely to incorporate the tools and practices
+  mentioned above into their work?
+
+\item
+  Are students who receive this training more likely than their peers
+  to develop new tools and practices, and/or become involved in
+  outreach and education activities (i.e., are they more likely to
+  become creators and leaders)?
+
+\item
+  In what ways does this training change students' outlook on the
+  practice of science itself?
+
+\end{enumerate}
+
+This researcher will also explore ways in which our engagement with
+students changes the outlook and work practices of their peers and
+faculty supervisors (i.e., whether there is knowledge transfer
+sideways and upward), and at the effectiveness of the community
+building and dissemination activities detailed in the next sections.
 
 As with our work to date, assessment will use both qualitative and
 quantitative techniques.  On the qualitative side, we will conduct a
@@ -266,6 +308,19 @@ will measure uptake of key tools such as version control as a proxy
 for adoption of related practices, as well as exploring more
 traditional measures of research success such as progression to
 graduate school and publication/citation rates.
+
+Our findings will be shared with other researchers through publication
+in peer-reviewed journals such as \emph{Science Education} and
+\emph{Physics Education}, and through presentations at conferences
+such as SIGCSE (the ACM's Special Interest Group on Computer Science
+Education) and smaller, domain-specific venues including the
+Association for Biology Laboratory Education (ABLE), the Society of
+Industrial and Applied Mathematics (SIAM)'s education session at the
+Joint Mathematics Meeting, and the tracks hosted by the Education
+Training and Workforce Development Division at the American Nuclear
+Society (ANS)'s annual meeting.  We will also continue to share our
+ideas in publications such as \emph{American Scientist}, which reach a
+broader cross-section of interested parties.
 
 \subsection{Community Building}
 
@@ -286,6 +341,17 @@ connecting them with other open science projects, introducing them to
 potential graduate supervisors who understand and value their new
 skills and outlook, etc.
 
+As a subordinate part of their work, the researcher employed by this
+project will assess the effectiveness of these local organizers.  In
+particular, they will explore whether seeding activity in this way
+leads to the formation of self-sustaining grassroots groups, and if
+so, what activities those groups develop on their own, how (and how
+effectively) they share discoveries with each other, the extent to
+which alumni of this program stay engaged with these groups, and
+whether the presence of these groups has a demonstrable impact on
+students' career paths in general, and their engagement with open and
+web-enabled science in particular.
+
 \subsection{Curriculum Development and Dissemination}
 
 We will employ one instructional designer part-time during each of the
@@ -300,11 +366,19 @@ participating institutions in order to encourage incorporation of
 those materials into existing curricula.
 
 All of the materials produced by and for this project will be made
-freely available under the Creative Commons - Attribution (CC-BY)
+freely available under the Creative Commons -- Attribution (CC-BY)
 license.  The instructional designer will work with the Mozilla
 Science Lab and affiliated groups to share these materials, and the
 results of our studies of the program's impact, through science
 education journals, conferences, and other channels.
+
+As a subordinate part of their work, the researcher employed by this
+project will assess the extent to which curriculum developed during
+this program is taken up by other educators (particularly those who
+think of themselves as scientists first and computationalists second),
+and their perception of its utility.  Mid-point results of this
+evaluation will be shared with the instructional designer in order to
+allow evidence-based improvement of the materials.
 
 \section{Broader Impact}
 
@@ -312,6 +386,15 @@ We believe this work will have significant impact in several related
 areas.
 
 \begin{enumerate}
+
+\item
+  \emph{Enhance economic competitiveness.} Computing is no longer
+  optional in any part of science: even scientists who don't think of
+  themselves as doing computational work rely on computers to prepare
+  papers, store data, and collaborate with colleagues.  The better
+  their computing skills are, the better able they will be to
+  contribute to the research that underpins the nation's economic
+  competitiveness.
 
 \item
   \emph{Improving STEM education for everyone, not just participants.}
@@ -330,15 +413,6 @@ areas.
   loop---i.e., by showing scientists how to apply science to their
   teaching---this project will demonstrate how STEM education can be
   continuously improved.
-
-\item
-  \emph{Enhance economic competitiveness.} Computing is no longer
-  optional in any part of science: even scientists who don't think of
-  themselves as doing computational work rely on computers to prepare
-  papers, store data, and collaborate with colleagues.  The better
-  their computing skills are, the better able they will be to
-  contribute to the research that underpins the nation's economic
-  competitiveness.
 
 \item
   \emph{Improve participation in STEM by women and under-represented
@@ -379,19 +453,6 @@ they can fill this void for computationally-minded students.
 \section{Data Management Plan}
 
 \fixme{TT}{Talk about curating our data.}
-
-\fixme{GW}{sprinkle citations into proposal}
-
-\cite{dubois2005}
-\cite{hannay2009}
-\cite{hochstein2005}
-\cite{prabhu2011}
-\cite{ram2013}
-\cite{segal2005a}
-\cite{sletholt2012}
-\cite{stodden2013}
-\cite{wilson2006a}
-\cite{wilson2013}
 
 \bibliographystyle{plain}
 \bibliography{proposal}
