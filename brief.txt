@@ -1,0 +1,30 @@
+The NSF "Improving Undergraduate STEM Education" (IUSE) program is an open 4-5 year funding call. Our proposal would (a) run Software Carpentry bootcamps for undergraduates at a steadily-increasing number of institutions over a 4-year period (initially 8, ramping up to 14), (b) employ a part-time community organizer (e.g., a grad student) at each site to keep participants engaged and move them through the pipeline to other open and web science activities, (c) hire a full-time assessor for the full 5 years to evaluate impact, and (d) hire a part-time instructional designer to create new materials and translate existing materials into web-native forms.
+
+The funding will cover:
+
+1. Money to cover costs of running yearly bootcamps at 8-14 institutions over 4 years.
+2. A full-time assessor for 5 years.
+3. Support for graduate student liaisons at each university to serve as mentors and local organizers.
+4. A part-time instructional designer for 4 years.
+
+This project will provide us with the data about how to deploy our educational programs with maximal lasting effects.  It will also get us into the NSF system (we expect a high success rate for the grant), and it funds an assessment position (who will naturally need to look at the Science Lab-backed projects that the students are moving into after our training).
+
+Budget
+
+*   Assessment: $90K/year x 5 years = $450K
+*   Bootcamps: 6 main sites x 1 bootcamp/year x 4 years x $3K/bootcamp = $96K
+*   Bootcamps: (2 + 4 + 6 + 8) extra sites x $3K/bootcamp = $60K
+*   Graduate interns: $40K/year x 0.5 time x 4/12 month/year x (8 + 10 + 12 + 14) sites = $293K
+*   Coordination (Mozilla): $50K/year x 1/12 month/year x 5 years = $21K
+*   TOTAL: $920K
+
+Note:
+
+1.  We run bootcamps for 4 years, and assessment for 5:
+    *   6 main sites get a bootcamp every year.
+    *   Add two more sites per year for 4 years (including the first).
+2.  Does NOT include overheads.
+3.  Does NOT include salary for PIs.
+    *   Need to figure out if KT is a PI, and if so, how much support she should get.
+
+Please add comments to https://github.com/swcarpentry/iuse2014/pull/9 on GitHub.

@@ -1,1 +1,0 @@
-make a concerted effort to say SWC is a project of the Mozilla Science Lab, a new open science initiative of the Mozilla Foundation, supported by the Sloan Foundation? Currently says it's backed by Mozilla and Sloan, which, whilst not totally untrue, is a bit misleading …
