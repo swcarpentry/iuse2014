@@ -1,12 +1,12 @@
 \documentclass{proposalnsf}
 
 % Document:	NSF proposal
-% Due:		Feb. 17, 2012
 % Author:		Lorena Barba
-% http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=13365&org=CBET&from=home
+% biosketch updated Jan. 23, 2014
 
 %--------------------------------------------------------------------  PROCESS WITH XeLaTeX
 \usepackage{fontspec}% provides font selecting commands 
+\usepackage{mdwlist} % reduces spacing in itemize and enumerate
 \usepackage{xunicode}% provides unicode character macros 
 \usepackage{xltxtra} % provides some fixes/extras 
 \setromanfont[Mapping=tex-text,
@@ -98,11 +98,11 @@
 % ------------------------------------------------------------------- Biosketch
 %\newpage
 \pagenumbering{arabic}
-\renewcommand{\thepage} {\footnotesize Bio.\,---\,\arabic{page}}
+\renewcommand{\thepage} {\footnotesize Barba bio-sketch\,---\,\arabic{page}}
 \section*{Prof.\ Lorena Barba}
 
 \small
-\textbf{Education and training:} 
+\textbf{Professional preparation:} 
 
 \begin{tabular}{llcc}
 Institution & Major & Degree & Year \\ \hline
@@ -112,55 +112,49 @@ California Institute of Technology, Pasadena, CA   &   Aeronautics & MSc & 1999 
 California Institute of Technology, Pasadena, CA  &   Aeronautics & PhD & 2004 \\
 \end{tabular}
 
-\textbf{Research and professional experience:} 
 
-09/2008-- \qquad Assistant Professor, Mechanical Engineering, Boston University
+\textbf{Appointments:} 
 
-08/2004--09/2008 \qquad Lecturer in Applied Mathematics, University of Bristol, UK
+\begin{tabular}{ll}
 
+08/2013-- & Associate Professor, Mechanical and Aerospace Engineering,\\
+& The George Washington  University, Washington, DC.\\
 
-\textbf{Honors and awards:} 
+09/2008--07/2013 &Assistant Professor, Mechanical Engineering, Boston University, Boston, MA.\\
 
-02/2012 \quad  National Science Foundation CAREER award.
+08/2004--09/2008 & Lecturer in Applied Mathematics, University of Bristol, UK
 
-08/2011 \quad  NVIDIA Academic Partnership award (\textdollaroldstyle 25,000 unrestricted cash award)
-  
-01/2008 \quad  \textit{Rising Star} Teaching Award for the Faculty of Science,
-  University of Bristol
-  
-3/2005 \quad   The Nuffield   Foundation Award to Newly Appointed Lecturers in
-  Science, Engineering and Mathematics (\pounds 5000)
-
-1999 \qquad  \textit{Amelia Earhart Fellowship Award}, for aerospace-related
-  graduate studies at doctoral level, Zonta International Foundation (\textdollaroldstyle 6000).
+\end{tabular}
 
 
+\textbf{Products:} % -------------------------------------------- 
 
-
-
-\textbf{Publications:} % -------------------------------------------- 
-%
-\vspace{\up}
+\vspace{\hup}
 \begin{list}{$\ast$}{\setlength{\leftmargin}{1em}}
 
-\item  Simon K. Layton, Anush Krishnan,  L.~A. Barba, cuIBM---A GPU-accelerated immersed boundary method, Submitted 2011. Preprint on \href{http://arxiv.org/abs/1109.3524}{arXiv:1109.3524}
+\item ``The Gathering Storm: Flipping the Classroom,'' Lorena A. Barba. SHPE Magazine, Winter 2014, \textbf{1}6(1):28--30 (January 2014), Society of Hispanic Professional Engineers. \\ Online at: \href{http://www.nxtbook.com/nxtbooks/shpe/winter14/#/30}{http://www.nxtbook.com/nxtbooks/shpe/winter14/\#/30}
 
-\item  Rio Yokota, L.~A.~Barba, Tetsu Narumi, Kenji Yasuoka, Petascale turbulence simulation using a highly parallel fast multipole method, \textit{Computer Physics Communications}.  Accepted, under revision. Preprint on \href{http://arxiv.org/abs/1106.5273}{arXiv:1106.5273}
+\item ``CFD Python: 12 Steps to Navier-Stokesequations,'' set of IPython Notebooks for teaching Computational Fluid Dynamics (July 2013), online at \href{https://bitbucket.org/cfdpython/cfd-python-class/}{https://bitbucket.org/cfdpython/cfd-python-class/}
 
-\item  Rio Yokota, L.~A.~Barba, A tuned and scalable fast multipole method as a preeminent algorithm for exascale systems, \textit{Int.\ J.\ High-Performance Computing and Applications}. In press; published online Jan.\ 2012, \href{http://hpc.sagepub.com/content/early/2012/01/18/1094342011429952.abstract}{doi:10.1177/1094342011429952}
+\item ``Everybody's Flippin' ---An update on the flipped classroom,'' Lorena A. Barba (17 February 2013), screencast on figshare, 
+\href{http://dx.doi.org/10.6084/m9.figshare.157200}{doi:10.6084/m9.figshare.157200}
 
-\item Felipe A.~Cruz, Simon K.~Layton, L.~A.~Barba, How to obtain efficient \gpu\ kernels: an illustration using FMM \& FGT, \textit{Computer Physics Communications}, \textbf{182}(10):2084--2098 (2011) \href{http://dx.doi.org/10.1016/j.cpc.2011.05.002}{doi:10.1016/j.cpc.2011.05.002}
+\item ``ME 702--Computational Fluid Dynamics,'' Lorena A. Barba (2012), set of 32 lecture screencasts on YouTube, with more than 190,000 collective views (checked January 2014). \\
+Online playlist: \href{http://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61}{http://www.youtube.com/playlist?list=PL30F4C5ABCE62CB61}
 
-\item Rio Yokota, Jaydeep P.~Bardhan, Matthew G.~Knepley, L.~A.~Barba, Tsuyoshi Hamada, Biomolecular electrostatics using a fast multipole BEM on up to 512 \gpu s and a billion unknowns, \textit{Computer Physics Communications}, \textbf{182}(6):1271--1283 (2011) \href{http://dx.doi.org/10.1016/j.cpc.2011.02.013}{doi:10.1016/j.cpc.2011.02.013}
 
-\item Rio Yokota, L.~A.~Barba, Treecode and fast multipole method for $N$-body simulation with CUDA, Ch.~9 in \textit{\gpu\ Gems Emerald Edition}, Wen-mei Hwu, ed.; Morgan Kaufmann/Elsevier (Jan.~2011), pp.~113--132. Preprint on \href{http://arxiv.org/abs/1010.1482}{arXiv:1010.1482}
+\end{list}
 
-\item  Felipe A.~Cruz, L.~A.~Barba, Matthew G.~Knepley, Pet\textsc{FMM}---a dynamically load-balancing parallel fast multipole library.   \textit{Int.\ J.\ Num.\ Meth.\ Fluids}; \href{http://dx.doi.org/10.1002/nme.2972}{doi:10.1002/nme.2972} (2010).
 
-\item Rio Yokota, L.~A.~Barba, Matthew G.~Knepley, Pet\textsc{RBF}---a parallel $\mathcal{O}(N)$ algorithm for radial basis function interpolation, \textit{Comput.\ Meth.\ Appl.\ Mech.\ Eng.}, \textbf{199}(25--28):1793--1804 \\ 
-\href{http://dx.doi.org/10.1016/j.cma.2010.02.008}{doi:10.1016/j.cma.2010.02.008} (2010).
+\vspace{\up}
+\begin{list}{$-$}{\setlength{\leftmargin}{1em}}
 
-%\item L.~A.~Barba, A.~Leonard, C.~B.~Allen, Advances in viscous vortex methods---Meshless spatial adaption based on radial basis function interpolation, \textit{Int.\ J.\ Num.\ Meth.\ Fluids} \textbf{47}(5): 387--421, \href{http://dx.doi.org/10.1002/fld.811}{doi: 10.1002/fld.811} (2005).
+\item ``Finding the Force---Consistent Particle Seeding for Satellite Aerodynamics,'' J. Brent Parham, L. A. Barba. AIAA Modeling and Simulation Technologies Conference, American Institute of Aeronautics and Astronautics (January 2014), National Harbor, MD, \href{http://dx.doi.org/10.2514/6.2014-1492}{doi:10.2514/6.2014-1492}. Preprint on \href{http://arxiv.org/abs/1312.3691}{arXiv:1312.3691} 
+
+\item ``A biomolecular electrostatics solver using Python, GPUs and boundary elements that can handle solvent-filled cavities and Stern layers,'' Christopher D. Cooper, Jaydeep P. Bardhan, L. A. Barba. \textit{Comput. Phys. Comm.} (2013), \href{http://dx.doi.org/10.1016/j.cpc.2013.10.028}{doi:10.1016/j.cpc.2013.10.028}. Preprint on \href{http://arxiv.org/abs/1309.4018}{arXiv:1309.4018}
+
+\item  Rio Yokota, L.~A.~Barba, Tetsu Narumi, Kenji Yasuoka, Petascale turbulence simulation using a highly parallel fast multipole method, \textit{Comput. Phys. Comm.}, \textbf{184}(3):445--455 (March 2013). \\ \href{http://dx.doi.org/10.1016/j.cpc.2012.09.011}{doi:10.1016/j.cpc.2012.09.011}. Preprint on \href{http://arxiv.org/abs/1106.5273}{arXiv:1106.5273}
+
 
 \end{list}
 
@@ -174,15 +168,14 @@ California Institute of Technology, Pasadena, CA  &   Aeronautics & PhD & 2004 \
 \begin{list}{ }{\setlength{\leftmargin}{2.5em}}
 
 
-	\item[]  Dr Barba has consistently advocated and participated in the open science philosophy.  Within her research group, all software developed is open-source and publicly available, at the different stages of development.  Moderate-size codes are uploaded to \href{http://code.google.com/u/lorena.barba/}{Google code} at the time of submission of a manuscript, while the preprint is uploaded to the \href{http://arxiv.org/find/cs/1/au:+Barba_L/0/1/0/all/0/1}{Arxiv} repository.  More complex software projects have a public version-controlled repository, while documentation and links are provided on an informative and well-maintained \href{http://barbagroup.bu.edu/}{group website}.
+	\item[]  Dr Barba has consistently advocated and participated in the open science philosophy.  Within her research group, all software developed is open-source and publicly available, at the different stages of development.  Preprints of all manuscripts are uploaded to the \href{http://arxiv.org/find/cs/1/au:+Barba_L/0/1/0/all/0/1}{arXiv} repository and software projects are distributed via various hosting sites (Google Code, Bitbucket, GitHub).
 
-	Consistent with the open science commitment, Dr Barba also has engaged in the open course-ware movement.  Her latest two courses taught at Boston University have been made available publicly in the form of (video) screencasts via \href{http://deimos3.apple.com/WebObjects/Core.woa/Browse/bu.edu.3295784150}{iTunes U}.
+	Consistent with the open science commitment, Dr Barba also has engaged in the open course-ware movement.  Her latest courses have been made available publicly in the form of (video) screencasts via iTunes U and YouTube.
 	
-	\item[Jan.'11] \emph{``PASI---Pan-American Advanced Studies Institute.  Scientific Computing in the Americas: The challenge of massive parallelism''} (Valpara\'iso, Chile).  Two-week advanced studies institute, organized entirely by Dr Barba and funded by NSF via award OISE-1036435 (amount \$100,600).  The focus of this PASI is on scientific discovery by means of high-performance computing, HPC,  using the latest many-core computer hardware, in particular graphics processors, or \gpu s.  Dr Barba has been promoting \gpu\ technology with her contacts in Latin America, as a technology that can level the playing field for countries of the ``scientifically developing'' category.  Bringing this event to Chile aims at building scientific capacity, promoting collaboration, and advanced training of young researchers in HPC. 
+	\item[Jan.'11] \emph{``PASI---Pan-American Advanced Studies Institute.  Scientific Computing in the Americas: The challenge of massive parallelism''} (Valpara\'iso, Chile).  Two-week advanced studies institute, organized entirely by Dr Barba and funded by NSF via award OISE-1036435 (amount \$100,600).  The focus of this PASI is on scientific discovery by means of high-performance computing using the latest many-core computer hardware, in particular graphics processors, or \gpu s.  Bringing this event to Chile aims at building scientific capacity, promoting collaboration, and advanced training of young researchers in HPC. 
 	
-	\item[Nov.'05--Jul.'09] \emph{``SCAT---Scientific Computing Advanced Training''}: Dr Barba put together an international network of collaboration involving 10 institutions in 6 countries, and prepared a proposal to the European Commission co-operation office for a grant under \emph{Programme ALFA II}, for projects of collaboration of higher-education institutions in Europe and Latin America, for scientific and technical training and knowledge transfer.   The proposal was  successful and the project was awarded a budget of nearly \textbf{\euro 1.4 million} for the whole duration.  It was one of only six projects funded in 2005 within this program.
-The SCAT project involved more than 40 professors and researchers, it awarded nearly 30 grants for graduate students and postdocs to travel to a guest institution within the network to carry out research as a visiting scholar (for a collective 235 funded graduate-student months), and sponsored 10 international scientific meetings. Dr Barba hosted 6 of the grantees at Bristol, 4 of which continued studies in PhD programs around the world. More information on the website:  \url{http://www.scat-alfa.eu}
-
+	\item[Nov.'05--Jul.'09] \emph{``SCAT---Scientific Computing Advanced Training''}: Dr Barba put together an international network of collaboration involving 10 institutions in 6 countries, and prepared a proposal to the European Commission co-operation office for a grant under \emph{Programme ALFA II}, for projects of collaboration of higher-education institutions in Europe and Latin America, for scientific and technical training and knowledge transfer.   The project, one of only six projects funded in 2005 within this program, was awarded a budget of nearly \textbf{\euro 1.4 million} for the whole duration. 
+It involved more than 40 professors and researchers, it awarded nearly 30 grants for graduate students and postdocs to travel to a network institution as a visiting scholar (for a collective 235 funded graduate-student months), and sponsored 10 international scientific meetings. Dr Barba hosted 6 of the grantees at Bristol, 4 of which continued studies in PhD programs around the world. 
 
 	\item[\emph{Invited Seminars:}] Dr Barba has visited the following institutions to give seminars: \vspace{\hup}
 \item[In 2010:] Columbia University, Brown University, Worcester Polytechnic Institute.\vspace{\hup}
@@ -191,7 +184,27 @@ The SCAT project involved more than 40 professors and researchers, it awarded ne
 \end{list}
 
 
+\textbf{Collaborators:} % --------------------------------------------  
+\vspace{\up}
 
+\begin{itemize}
+\item Jaydeep Bardhan, Department of Electrical and Computer Engineering, Northeastern University
+
+\item Cris Cecka, Institute for Applied Computational Science, Harvard University
+
+\item Tsuyoshi Hamada, Nagasaki University Advanced Computing Center (NACC), Japan
+\item Hans Johnston, Mathematics and Statistics Department, University of Massachusetts, Amherst.
+\item Matthew G Knepley, Computation Institute, University of Chicago
+
+\item Louis F Rossi, Department of Mathematical Sciences, University of Delaware
+
+\item Jake Socha, Department of Engineering Science and Mechanics, Virginia Tech
+\item Pavlos P. Vlachos, Department of Mechanical Engineering, Virginia Tech
+\end{itemize}
+
+\textbf{Graduate advisor:} \quad Anthony Leonard, California Institute of Technology.
+
+\textbf{Graduated students and postdocs advised}: Felipe A. Cruz, Simon K. Layton, Rio Yokota.
 
 %%%%%%%%
 \end{document}
