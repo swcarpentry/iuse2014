@@ -5,7 +5,7 @@
 
 %--------------------------------------------------------------------  PROCESS WITH XeLaTeX
 \usepackage{fontspec}% provides font selecting commands 
-\usepackage{mdwlist} % reduces spacing in itemize and enumerate
+\usepackage{paralist}       % compactitem environment
 \usepackage{xunicode}% provides unicode character macros 
 \usepackage{xltxtra} % provides some fixes/extras 
 \setromanfont[Mapping=tex-text,
@@ -274,7 +274,7 @@ invent new ways tomorrow.  Over 100 certified volunteer instructors
 delivered two-day intensive workshops to more than 4200 people in 2013
 alone.  Their subject matter usually includes:
 
-\begin{itemize}
+\begin{compactitem}
 \item
   the Unix shell,
 \item
@@ -283,11 +283,11 @@ alone.  Their subject matter usually includes:
   programming in Python or R, and
 \item
   using SQL.
-\end{itemize}
+\end{compactitem}
 
 What these workshops actually seek to convey, though, is:
 
-\begin{itemize}
+\begin{compactitem}
 \item
   how to automate repetitive tasks,
 \item
@@ -296,7 +296,7 @@ What these workshops actually seek to convey, though, is:
   how to grow a program in a modular, testable, reusable way, and
 \item
   the difference is between structured and unstructured data.
-\end{itemize}
+\end{compactitem}
 
 Software Carpentry's curriculum and teaching practices have been
 refined via iterative design, and are informed by current research on
@@ -535,14 +535,14 @@ license.  The instructional designer will work with the Mozilla
 Science Lab and affiliated groups to share these materials, and the
 results of our studies of the program's impact, through science
 education journals, conferences, and other channels. Specifically, we plan to publish articles in the following journals 
-\begin{itemize}
+\begin{compactitem}
 \item Journal of Computers in Mathematics and Science Teaching, and
 %
 \item Physics Education,
-\end{itemize}
+\end{compactitem}
 %
 and present papers at the following conferences
-\begin{itemize}
+\begin{compactitem}
 \item  the Special Interest Group on Computer Science Education (SIGCSE) of the Association for Computing Machinery, Inc. (ACM),
 %
 \item the International Conference on Physics Education (ICPE),
@@ -552,7 +552,7 @@ and present papers at the following conferences
 \item the Society for Industrial and Applied Mathematics (SIAM), and
 %
 \item the American Nuclear Society (ANS).
-\end{itemize}
+\end{compactitem}
 
 The dissemination of this project's curriculum has strong potential to be high. Workshop materials are all open access and flexible, thus they can be readily adopted by others. Adapting workshop materials is low cost and does not require special equipment. Workshop materials are structured such that they can scale to the size and application of interest to a particular group. The Software Carpentry infrastructure provides support in the form of materials and people. Anyone using workshop materials can directly contribute changes and feedback, which both increases buy-in and improves the materials organically. And finally, local chapters of The Hacker Within create a natural ecosystem of support for workshop participants, their peers, and faculty. 
 
