@@ -1,0 +1,258 @@
+\documentclass{proposalnsf}
+
+%--------------------------------------------------------------------  PROCESS WITH XeLaTeX
+\usepackage{fontspec}% provides font selecting commands 
+\usepackage{xunicode}% provides unicode character macros 
+\usepackage{xltxtra} % provides some fixes/extras 
+\setromanfont[Mapping=tex-text,
+                 SmallCapsFont={Palatino},
+                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+\setsansfont[Scale=0.85]{Trebuchet MS} 
+\setmonofont[Scale=0.85]{Monaco}
+
+\renewcommand{\captionlabelfont}{\bf\sffamily}
+\usepackage[hang,flushmargin]{footmisc} 
+% 'hang' flushes the footnote marker to the left,  'flushmargin'  flushes the text as well.
+
+% Define the color to use in links:
+\definecolor{linkcol}{rgb}{0.459,0.071,0.294}
+\definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
+\definecolor{propcol}{rgb}{0.75,0.0,0.04}
+
+\definecolor{blue}{rgb}{0,0,0}
+\definecolor{green}{rgb}{0.5,0.5,0.5}
+\definecolor{gray}{rgb}{0.25,0.25,0.25}
+\definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
+
+\usepackage[
+    xetex,
+    pdftitle={NSF proposal},
+    pdfauthor={Gregory V.\ Wilson},
+    pdfpagemode={UseOutlines},
+    pdfpagelayout={TwoColumnRight},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    pdfstartview={FitH},
+    colorlinks, linkcolor={sectcol},citecolor={sectcol},urlcolor={sectcol}
+    ]{hyperref}
+
+%% Define a new style for the url package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+
+
+\addto\captionsamerican{%
+  \renewcommand{\refname}%
+    {References Cited}%
+} % solution found here: http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
+
+\def\baselinestretch{1}
+\setlength{\parindent}{0mm} \setlength{\parskip}{0.8em}
+
+\newlength{\up}
+\setlength{\up}{-4mm}
+
+\newlength{\hup}
+\setlength{\hup}{-2mm}
+
+\sectionfont{\large\bfseries\color{sectcol}\vspace{-2mm}}
+\subsectionfont{\normalsize\it\bfseries\vspace{-4mm}}
+\subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
+\paragraphfont{\bfseries}
+% ---------------------------------------------------------------------
+\begin{document}
+
+% ------------------------------------------------------------------- Biosketch
+%\newpage
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\footnotesize Bio.\,---\,\arabic{page}}
+\section*{Dr.\ Gregory V.\ Wilson}
+
+\small
+\textbf{Education and training:} 
+
+\begin{tabular}{llcc}
+Institution & Major & Degree & Year \\ \hline
+Queen's University & Mathematics and Engineering & BSc & 1984 \\
+University of Edinburgh & Artificial Intelligence & MSc & 1986 \\
+University of Edinburgh & Computer Science & PhD & 1993 \\
+\end{tabular}
+
+\textbf{Research and professional experience:} 
+
+\begin{tabular}{ll}
+2012 -- present &  Project lead, Software Carpentry, Mozilla Foundation \\
+2011         &  Software engineer, Side Effects Software Inc. \\
+2010 -- 2011 &  Independent training consultant, Software Carpentry \\
+2006 -- 2010 &  Assistant Professor, Dept.\ of Computer Science, University of Toronto \\
+2004 -- 2006 &  Independent contractor \\
+2000 -- 2004 &  Software engineer, Nevex/Baltimore Technologies/Hewlett-Packard \\
+1998 -- 2000 &  Independent contractor \\
+1996 -- 1998 &  Software engineer, Visible Decisions Inc. \\
+1995 -- 1996 &  Scientist, Centre for Advanced Studies, IBM Toronto \\
+1992 -- 1995 &  Post-doctoral researcher at various universities \\
+1986 -- 1992 &  Software engineer, Edinburgh Parallel Computing Centre \\
+1985         &  Software engineer, Bell-Northern Research \\
+1984 -- 1985 &  Software engineer, Miller Communications Ltd. \\
+\end{tabular}
+
+\textbf{Honors and awards:} 
+
+\begin{tabular}{ll}
+2010 & ComputerWorld Canada's IT Educator of the Year \\
+2008 & Jolt Award for Best General Book (with co-editor Andy Oram) \\
+2004 & University of Toronto Computer Science Student Union Teaching Award \\
+1986 & Howe Prize, University of Edinburgh \\
+1985--86 & Commonwealth Scholarship \\
+1984 & University Medal, Queen's University (top student in graduating class) \\
+1984 & A.B.\ Lillie Prize (top student in mathematics) \\
+1982--84 & Dean's Scholar, Faculty of Applied Science, Queen's University \\
+\end{tabular}
+
+\textbf{Selected Publications:} % -------------------------------------------- 
+%
+\vspace{\up}
+\begin{list}{$\ast$}{\setlength{\leftmargin}{1em}}
+
+\item
+Amy Brown and Greg Wilson (eds.).
+{\em The Architecture of Open Source Applications: Elegance, Evolution, and a Few Fearless Hacks}.
+Lulu, 2011.
+
+\item
+Andy Oram and Greg Wilson (eds.).
+{\em Making Software: What Really Works, and Why We Believe It}.
+O'Reilly, 2010.
+
+\item
+Jo~Erskine Hannay, Hans~Petter Langtangen, Carolyn MacLeod, Dietmar Pfahl, Janice Singer, and Greg Wilson.
+How do scientists develop and use scientific software?
+In {\em Proceedings of the Second International Workshop on Software Engineering for Computational Science and Engineering (SE-CSE 2009)}. IEEE, 2009.
+
+\item
+Greg Wilson.
+How do scientists really use computers?
+{\em American Scientist}, September/October 2009.
+
+\item
+Jordi Cabot and Greg Wilson.
+Tools for teams: A survey of web-based software project portals.
+{\em Doctor Dobb's Journal}, October 2009.
+
+\item
+Jennifer Campbell, Paul Gries, Jason Montojo, and Greg Wilson.
+{\em Practical Programming}.
+Pragmatic Bookshelf, 2009.
+
+\item
+David Matthews, Greg Wilson, and Steve Easterbrook.
+Configuration management for large-scale scientific computing at the UK Met Office.
+{\em Computing in Science and Engineering}, November/December 2008.
+
+\item
+Greg Wilson.
+Those who will not learn from history...
+{\em Computing in Science and Engineering}, 10(3), May 2008.
+
+\item
+Andy Oram and Greg Wilson (eds.).
+{\em Beautiful Code: Leading Programmers Explain How They Think}.
+O'Reilly, 2007.
+
+\item
+Jorge Aranda, Steve Easterbrook, and Greg Wilson.
+Requirements in the wild: How small companies do it.
+In {\em Proceedings of the 15th International Conference on Requirements Engineering}, October 2007.
+
+\item
+Greg Wilson.
+Where's the real bottleneck in scientific computing?
+{\em American Scientist}, January/February 2006.
+
+\item
+D.~Winter, B.~Vinegar, H.~Nahal, R.~Ammar, G.~V. Wilson, and N.~J. Provart.
+An 'electronic fluorescent pictograph' browser for exploring and analyzing large-scale biological data sets.
+{\em PLoS ONE}, 2(8), 2007.
+
+\item
+Greg Wilson.
+Open-source offers solutions for science software education.
+{\em Nature}, 436:600, July 2005.
+
+\item
+Greg Wilson.
+{\em Data Crunching: Solve Everyday Problems Using Java, Python, and More}.
+Pragmatic Bookshelf, 2005.
+
+\item
+Karen~L. Reid and Gregory~V. Wilson.
+Learning by doing: introducing version control as a way to manage student assignments.
+In {\em Proceedings of the 36th SIGCSE Technical Symposium on Computer Science Education}, pages 272--276. ACM, 2005.
+
+\item
+Gregory~V. Wilson and Paul Lu (eds.).
+{\em Parallel Programming Using C++}.
+MIT Press, 1996.
+
+\item
+Eshrat Arjomandi, William~G. O'Farrell, and Gregory~V. Wilson.
+Smart messages: An object-oriented communication mechanism for parallel systems.
+{\em Computing Systems}, 9(4):313--329, 1996.
+
+\item
+Gregory~V. Wilson.
+What should computer scientists teach to physical scientists and engineers?
+{\em IEEE Computational Science and Engineering}, Summer and Fall 1996.
+
+\item
+Gregory~V. Wilson.
+{\em Practical Parallel Programming}.
+MIT Press, 1995.
+
+\item
+Arthur Trew and Greg Wilson (eds.).
+{\em Past, Present, Parallel: A Survey of Available Parallel Computing Systems}.
+Springer-Verlag, 1991.
+
+\end{list}
+
+\textbf{Synergistic activities:} % --------------------------------------------  
+
+Dr.\ Wilson co-founded Software Carpentry with Brent Gorda in 2004.
+Since then,
+he has grown it to an international volunteer program
+with over 100 instructors in a dozen different countries.
+In 2013 alone,
+Software Carpentry ran over 90 two-day workshops for almost 4500 scientists.
+
+Dr.\ Wilson has consistently demonstrated a strong commitment to undergraduate education over more than two decades.
+He founded the Edinburgh Parallel Computing Centre's Summer Scholarship Programme,
+which recruited and trained 60 students between 1988 and 1992.
+While at the University of Toronto,
+he supervised over 150 undergraduates working alone or in small teams on almost 100 real-world projects,
+of which more than half were for clients outside the Computer Science department.
+In 2009, he created the UCOSP program,
+through which 90 students from more than a dozen Canadian universities worked in distributed teams on open source projects.
+He has been a mentor for Google's Summer of Code program since its inception in 2005.
+
+Dr.\ Wilson has been a member of the Python Software Foundation since 2010.
+
+\textbf{Collaborators:} % --------------------------------------------  
+\vspace{\up}
+
+\begin{itemize}
+\item Marian Petre, Dept.\ of Computer Science, Open University (UK).
+\end{itemize}
+
+\textbf{Graduated students and postdocs advised}: Samira Abdi Ashtiani, Aran Donohue, Jeremy Handcock, Carolyn MacLeod, Jason Montojo, Rory Tulk.
+
+\end{document}
