@@ -1,4 +1,4 @@
-LATEX = pdflatex
+LATEX = xelatex
 BIBTEX = bibtex
 
 all : proposal.pdf
