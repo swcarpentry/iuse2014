@@ -25,8 +25,6 @@
 \definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
 \definecolor{propcol}{rgb}{0.75,0.0,0.04}
 
-\definecolor{blue}{rgb}{0,0,0}
-\definecolor{green}{rgb}{0.5,0.5,0.5}
 \definecolor{gray}{rgb}{0.25,0.25,0.25}
 \definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
 
@@ -77,6 +75,17 @@
 \subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
 \paragraphfont{\bfseries}
 % ---------------------------------------------------------------------
+% DRAFTING COMMENTS:
+\newcommand\ignore[1]{} % Styles for author comments:
+% Enter a comment like this:   \comment{This is a comment.}
+%\ignore{
+\newcommand{\important}[1]{\textcolor{red}{ #1 }}
+\newcommand{\comment}[1]{\textcolor{blue}{ #1 }}
+%}
+% Uncomment lines below to change from visible to invisible comments.
+%\renewcommand{\important}[1]{}
+%\renewcommand{\comment}[1]{}
+
 \begin{document}
 
 % ----------------------  PROJECT SUMMARY - 1 page max - write in 3rd person
@@ -138,9 +147,9 @@ to raise both standards and expectations.  The result will be
 researchers who are better able to contribute to science tomorrow as
 well as today.
 
-\textbf{Intellectual merit:}  MUST INCLUDE SEPARATE PARAGRAPH.
+\textbf{Intellectual merit:}  \comment{ INCLUDE SEPARATE PARAGRAPH}
 
-\textbf {Broader impacts:}  ALSO ON THIS ...
+\textbf {Broader impacts:}  \comment{ALSO ON THIS ...}
 
 
 \renewcommand{\thepage} {\footnotesize Project Summary}
@@ -179,19 +188,19 @@ instead of automating them, develop software using a methodology best
 summarized as ``copy, paste, tweak, and pray'', and fail to track
 their work in any systematic, reproducible way.
 
-And while the World-Wide Web was created by a scientist to help his
+While the World-Wide Web was created by a scientist to help his
 peers share information, many still use it primarily as a way to find
 and download PDFs.  Researchers may understand that open data can fuel
 new insights, but often lack the skills needed to create and provide a
 reusable data set.  Equally, any discussion of changing scientific
-publishing, make research reproducible, or using the web to support
+publishing, making research reproducible, or using the web to support
 ``science as a service'' must eventually address the lack of
 pre-requisite skills in the general STEM research community.
 
 Since the mid-1980s (at least), proponents of computational science
 have taken an ``if we build it, they will come'' approach to this
 problem.  It is clear now, though, that learning-by-osmosis has not
-worked, and is unlikely to in the future for several reasons:
+worked,\comment{EVIDENCE?}\ and is unlikely to in the future for several reasons:
 
 \begin{enumerate}
 
@@ -234,7 +243,7 @@ exist.
 
 \section{Related Work}
 
-\subsection{Research}
+\subsection{Research}\vspace{\hup}
 
 Studies of how scientists use computers and the web have found that
 most scientists learn what they know about developing software and
@@ -263,7 +272,7 @@ training meant to address this issue:
 
 \end{itemize}
 
-\subsection{Software Carpentry}
+\subsection{Software Carpentry}\vspace{\hup}
 
 Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
 date to address these issues. Originally created as a training program
@@ -300,21 +309,23 @@ What these workshops actually seek to convey, though, is:
 
 Software Carpentry's curriculum and teaching practices have been
 refined via iterative design, and are informed by current research on
-teaching and learning best practices.  Its instructor training program
+teaching and learning best practices.\comment{CONCRETE EXAMPLES?}
+Its instructor-training program
 introduces participants to a variety of modern teaching techniques
 (e.g., peer instruction), to concepts underlying these techniques
 (e.g., cognitive load theory), and to topic-specific work by computing
 education researchers (see \cite{guzdial2010}, \cite{hazzan2011}, and
 the first third of \cite{sorva2012} for overviews.)  One example of
-how we translate theory into practice is our insistence on live coding
+how they translate theory into practice is their insistence on live coding
 during teaching as a way of demonstrating and transferring authentic
 practice to learners.
 
 Software Carpentry has been assessing learning outcomes and retention
-since the beginning of its Sloan Foundation-funded in January 2012.
+since the beginning of its Sloan Foundation funding in January 2012.
 The first round of assessment included both qualitative and
 quantitative assessment by Dr.\ Jorge Aranda (then at the University
 of Victoria) and Prof.\ Julie Libarkin (Michigan State University).
+\comment{CAN YOU ADD A SUMMARY OF THOSE ASSESSMENTS?}
 An attempt to scale this up in 2013 was set back by personnel changes,
 but systematic follow-ups with past participants in workshops have now
 been resumed, and we expect to be able to present preliminary results
@@ -657,6 +668,7 @@ they can fill this void for computationally-minded students.
 
 \section*{Data Management Plan}
 
+\subsection*{Human-subjects data}\vspace{\hup}
 This project will collect human subjects data consisting of background
 demographics (including age, gender, ethnicity, field of study, and
 prior computing experience), career information (including
@@ -695,5 +707,10 @@ data acquired and preserved in the context of this proposal will be
 further governed by the University of California - Berkeley's policies
 pertaining to intellectual property, record retention, and data
 management.
+
+\subsection*{Educational materials}\vspace{\hup}
+[[ Add here a paragraph about the learning objects that will be created
+and how these will be shared openly on the web, how they will be
+version-controlled, etc. Mention the provisions for re-use, license, etc.]]
 
 \end{document}
