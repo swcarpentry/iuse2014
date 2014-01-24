@@ -1,21 +1,110 @@
-\documentclass[11pt]{article}
+\documentclass{proposalnsf}
+% This class file has been tweaked to death by LBarba to fit precisely the 
+% formatting strictures of NSF, while still being rather pretty.
 
-\title{
-  Assessing the Impact of Intensive Software Skills Training
-  on Students' Scientific Careers
-}
 
-\author{
-  Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown,\\   
-  and Paul Wilson\\ 
-  with Ethan White, Tracy Teal, and Greg Wilson
-}
+%--------------------------------------------------------------------  PROCESS WITH XeLaTeX
+\usepackage{fontspec}% provides font selecting commands 
+\usepackage{paralist}       % compactitem environment
+\usepackage{xunicode}% provides unicode character macros 
+\usepackage{xltxtra} % provides some fixes/extras 
+\setromanfont[Mapping=tex-text,
+                 SmallCapsFont={Palatino},
+                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+\setsansfont[Scale=0.85]{Trebuchet MS} 
+\setmonofont[Scale=0.85]{Monaco}
+
+\renewcommand{\captionlabelfont}{\bf\sffamily}
+\usepackage[hang,flushmargin]{footmisc} 
+% 'hang' flushes the footnote marker to the left,  'flushmargin'  flushes the text as well.
+
+
+
+% Define the color to use in links:
+\definecolor{linkcol}{rgb}{0.459,0.071,0.294}
+\definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
+\definecolor{propcol}{rgb}{0.75,0.0,0.04}
+
+\definecolor{gray}{rgb}{0.25,0.25,0.25}
+\definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
+
+
+
+\usepackage[
+    xetex,
+    pdftitle={NSF proposal},
+    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, and Greg Wilson},
+    pdfpagemode={UseOutlines},
+    pdfpagelayout={TwoColumnRight},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    pdfstartview={FitH},
+    colorlinks, linkcolor={sectcol},citecolor={sectcol},urlcolor={sectcol}
+    ]{hyperref}
+
+%% Define a new style for the url package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+
+
+\addto\captionsamerican{%
+  \renewcommand{\refname}%
+    {References Cited}%
+} % solution found here: http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
+
+\def\baselinestretch{1}
+\setlength{\parindent}{0mm} \setlength{\parskip}{0.8em}
+
+\newlength{\up}
+\setlength{\up}{-4mm}
+
+\newlength{\hup}
+\setlength{\hup}{-2mm}
+
+\sectionfont{\large\bfseries\color{sectcol}\vspace{-2mm}}
+\subsectionfont{\normalsize\it\bfseries\vspace{-4mm}}
+\subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
+\paragraphfont{\bfseries}
+% ---------------------------------------------------------------------
+% DRAFTING COMMENTS:
+\newcommand\ignore[1]{} % Styles for author comments:
+% Enter a comment like this:   \comment{This is a comment.}
+%\ignore{
+\newcommand{\important}[1]{\textcolor{red}{ #1 }}
+\newcommand{\comment}[1]{\textcolor{blue}{ #1 }}
+%}
+% Uncomment lines below to change from visible to invisible comments.
+%\renewcommand{\important}[1]{}
+%\renewcommand{\comment}[1]{}
 
 \begin{document}
-\maketitle
-\pagebreak
 
-\section{Summary}
+% ----------------------  PROJECT SUMMARY - 1 page max - write in 3rd person
+
+
+% Small title with normal-size font:
+\begin{center}
+
+\large\textbf{Assessing the Impact of Intensive Software Skills Training
+  on Students' Scientific Careers}
+
+{\large \sf Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson\\ 
+  with Ethan White, Tracy Teal, and Greg Wilson}
+
+\end{center}
+
+
+
+\textbf{Overview:}
 
 Computers are now ubiquitous in scientific research, but many
 researchers in science, technology, engineering, and mathematics
@@ -58,7 +147,36 @@ to raise both standards and expectations.  The result will be
 researchers who are better able to contribute to science tomorrow as
 well as today.
 
-\pagebreak
+\textbf{Intellectual merit:}  \comment{ INCLUDE SEPARATE PARAGRAPH}
+
+\textbf {Broader impacts:}  \comment{ALSO ON THIS ...}
+
+
+\renewcommand{\thepage} {\footnotesize Project Summary}
+
+\newpage
+
+% ----------------------  end SUMMARY 
+
+
+% ----------------------  TECHNICAL PROPOSAL starts here ... Maximum 15 pages
+\pagestyle{plain}
+% reset page numbering to 1 
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\arabic{page}}
+
+\begin{center}
+\small{PROJECT DESCRIPTION}
+
+% Small title with normal-size font
+
+\large\textbf{Assessing the Impact of Intensive Software Skills Training
+  on Students' Scientific Careers}
+
+{\large \sf Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson\\ 
+  with Ethan White, Tracy Teal, and Greg Wilson}
+
+\end{center}
 
 \section{The Problem}
 
@@ -70,19 +188,19 @@ instead of automating them, develop software using a methodology best
 summarized as ``copy, paste, tweak, and pray'', and fail to track
 their work in any systematic, reproducible way.
 
-And while the World-Wide Web was created by a scientist to help his
+While the World-Wide Web was created by a scientist to help his
 peers share information, many still use it primarily as a way to find
 and download PDFs.  Researchers may understand that open data can fuel
 new insights, but often lack the skills needed to create and provide a
 reusable data set.  Equally, any discussion of changing scientific
-publishing, make research reproducible, or using the web to support
+publishing, making research reproducible, or using the web to support
 ``science as a service'' must eventually address the lack of
 pre-requisite skills in the general STEM research community.
 
 Since the mid-1980s (at least), proponents of computational science
 have taken an ``if we build it, they will come'' approach to this
 problem.  It is clear now, though, that learning-by-osmosis has not
-worked, and is unlikely to in the future for several reasons:
+worked,\comment{EVIDENCE?}\ and is unlikely to in the future for several reasons:
 
 \begin{enumerate}
 
@@ -123,115 +241,13 @@ an impact, and if so, how and how much.  Without such feedback, there
 is no systematic way to improve the training programs that currently
 exist.
 
-\section{Related Work}
 
-\subsection{Research}
-
-Studies of how scientists use computers and the web have found that
-most scientists learn what they know about developing software and
-using computers and the web in their research through osmosis and word
-of mouth \cite{hannay2009,prabhu2011}. In our experience, most
-training meant to address this issue:
-
-\begin{itemize}
-
-\item
-  does not target scientists' specific needs (e.g., is a general
-  ``Introduction to Computing'' class shared with students majoring in
-  other areas);
-
-\item
-  only covers the mechanics of programming in a particular language
-  rather than giving a complete picture including data management,
-  web-enabled publishing, the ``defense in depth'' approach to
-  correctness discussed in \cite{dubois2005}, or the other
-  foundational skills laid out in \cite{wilson2013}; and/or
-
-\item
-  jumps to advanced topics such as parallel computing before
-  scientists have mastered the foundations.  (Most research on
-  scientific computing, such as \cite{hochstein2005}, does the same.)
-
-\end{itemize}
-
-\subsection{Software Carpentry}
-
-Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
-date to address these issues. Originally created as a training program
-at Los Alamos National Laboratory in the late 1990s, it is now part of
-the Mozilla Science Lab's efforts to help scientists take advantage of
-ways in which the web can change the practice of science today, and
-invent new ways tomorrow.  Over 100 certified volunteer instructors
-delivered two-day intensive workshops to more than 4200 people in 2013
-alone.  Their subject matter usually includes:
-
-\begin{itemize}
-\item
-  the Unix shell,
-\item
-  version control with Git,
-\item
-  programming in Python or R, and
-\item
-  using SQL.
-\end{itemize}
-
-What these workshops actually seek to convey, though, is:
-
-\begin{itemize}
-\item
-  how to automate repetitive tasks,
-\item
-  how to track and share work,
-\item
-  how to grow a program in a modular, testable, reusable way, and
-\item
-  the difference is between structured and unstructured data.
-\end{itemize}
-
-Software Carpentry's curriculum and teaching practices have been
-refined via iterative design, and are informed by current research on
-teaching and learning best practices.  Its instructor training program
-introduces participants to a variety of modern teaching techniques
-(e.g., peer instruction), to concepts underlying these techniques
-(e.g., cognitive load theory), and to topic-specific work by computing
-education researchers (see \cite{guzdial2010}, \cite{hazzan2011}, and
-the first third of \cite{sorva2012} for overviews.)  One example of
-how we translate theory into practice is our insistence on live coding
-during teaching as a way of demonstrating and transferring authentic
-practice to learners.
-
-Software Carpentry has been assessing learning outcomes and retention
-since the beginning of its Sloan Foundation-funded in January 2012.
-The first round of assessment included both qualitative and
-quantitative assessment by Dr.\ Jorge Aranda (then at the University
-of Victoria) and Prof.\ Julie Libarkin (Michigan State University).
-An attempt to scale this up in 2013 was set back by personnel changes,
-but systematic follow-ups with past participants in workshops have now
-been resumed, and we expect to be able to present preliminary results
-by mid-2014.
-
-\subsection{The Hacker Within}
-
-The Hacker Within (THW)\cite{huff2011}, was founded by graduate students in 
-nuclear engineering at the University of Wisconsin to provide a forum for 
-sharing scientific computing skills and best practices with their peers. As it 
-matured as a student organization, it attracted students from many scientific 
-disciplines and academic levels. THW conducted bi-weekly seminars and developed 
-a series of short courses addressing programming languages C++, python, and 
-Fortran, and best practices such as version control and test driven code 
-development, as well as basic skills such as UNIX mobility. This curriculum was 
-delivered primarily in an interactive short workshops on campuses and during 
-scientific conferences. Many previous founders of the Hacker Within have since 
-become instructors with Software Carpentry and a new generation of THW graduate 
-students has begun to emerge in their place. In 2013, new branches of THW were 
-begun at the University of Melbourne and the University of California - 
-Berkeley.  
 
 \section{Proposed Work}
 
-This proposal builds on our success to date in enhancing the skills of
-graduate students, post-docs, and faculty.  We designed it to:
+This proposal builds on the success to date of the Software Carpentry
+workshops in enhancing the skills of
+graduate students, post-docs, and faculty.  We propose to:
 
 \begin{enumerate}
 
@@ -246,26 +262,23 @@ graduate students, post-docs, and faculty.  We designed it to:
   presentation of the training; and
 
 \item
-  disseminate the resulting curriculum as widely as possible.
+  disseminate the resulting curriculum widely.
 
 \end{enumerate}
 
-More specifically, we will run two-day software skills workshops each
-year for four years for undergraduate students taking part in that
-year in the NSF's Research Experience for Undergraduates (REU)
-program, at or near the start of those students' time in the lab.  We
-believe this training will help them be more productive during their
-REU (graduate-level participants in our existing workshops typically
+We will run software-skills workshops for undergraduate students taking part each year in the NSF's Research Experience for Undergraduates (REU)
+program, at or near the start of those students' time in the lab.  
+The expectation is that this training will help them be more productive 
+during their REU (graduate-level participants in our existing workshops typically
 report that what we teach saves them a day a week), and also prepare
 them to work in a world where all aspects of science are increasingly
-dependent on computing.  More importantly, these undergraduates will
+dependent on computing.  These undergraduates will
 serve as the treatment population for a five-year study of the impact
 of this training on their careers in general, and their involvement
 with open and web-enabled science in particular.
 
-The sections below detail the specific activities we will undertake.
 
-\subsection{Workshops}
+\subsection{Workshops}\vspace{\hup}
 
 We will run two-day workshops at a steadily increasing number of sites
 each year for four years, timed to coincide with the start of the
@@ -286,7 +299,7 @@ those years.  Two other NSF REU sites will be added each year,
 increasing the total to 12 sites by year 4, which increases the size of our study population.
 
 In order to increase the diversity of the study population, we will
-additionally run at least one workshop in each of years 1-4 that is
+additionally run at least one workshop in each of years 1--4 that is
 specifically aimed at female students.  Software Carpentry's first
 such workshop, held in Boston in June 2013, attracted 120
 participants; its second is scheduled for Lawrence Berkeley National
@@ -305,7 +318,7 @@ colleges and universities (HBCUs); Software Carpentry is running its
 first workshop at an HBCU (Spelman) in early 2014, and we expect to
 have expanded these efforts by the start of this project.
 
-\subsection{Assessment}
+\subsection{Assessment}\vspace{\hup}
 
 We will employ one full-time researcher for five years to monitor and
 compare undergraduate participants in these workshops, participants in
@@ -326,8 +339,8 @@ particularly, but not exclusively, on the following questions:
 
 \item
   Are students who receive this training more likely than their peers
-  to choose computationally-oriented research topics and/or careers?
-  Are those who do not choose computationally-oriented paths
+  to choose computationally oriented research topics and/or careers?
+  Are those who do not choose computationally oriented paths
   nevertheless more likely to incorporate the tools and practices
   mentioned above into their work?
 
@@ -377,7 +390,7 @@ Society (ANS)'s annual meeting.  We will also continue to share our
 ideas in publications such as \emph{American Scientist}, which reach a
 broader cross-section of interested parties.
 
-\subsection{Community Building}
+\subsection{Community Building}\vspace{\hup}
 
 We will employ one graduate student part-time at each participating
 site each year to provide technical support to workshop participants,
@@ -407,7 +420,7 @@ whether the presence of these groups has a demonstrable impact on
 students' career paths in general, and their engagement with open and
 web-enabled science in particular.
 
-\subsection{Curriculum Development and Dissemination}
+\subsection{Curriculum Development and Dissemination}\vspace{\hup}
 
 We will employ one instructional designer part-time during each of the
 study's first four years to create new material, and to improve
@@ -426,14 +439,14 @@ license.  The instructional designer will work with the Mozilla
 Science Lab and affiliated groups to share these materials, and the
 results of our studies of the program's impact, through science
 education journals, conferences, and other channels. Specifically, we plan to publish articles in the following journals 
-\begin{itemize}
+\begin{compactitem}
 \item Journal of Computers in Mathematics and Science Teaching, and
 %
 \item Physics Education,
-\end{itemize}
+\end{compactitem}
 %
-and present papers at the following conferences
-\begin{itemize}
+and present papers at the following conferences \comment{These have already been listed above; no need to list them twice. Remove from above?}
+\begin{compactitem}
 \item  the Special Interest Group on Computer Science Education (SIGCSE) of the Association for Computing Machinery, Inc. (ACM),
 %
 \item the International Conference on Physics Education (ICPE),
@@ -443,7 +456,7 @@ and present papers at the following conferences
 \item the Society for Industrial and Applied Mathematics (SIAM), and
 %
 \item the American Nuclear Society (ANS).
-\end{itemize}
+\end{compactitem}
 
 The dissemination of this project's curriculum has strong potential to be high. Workshop materials are all open access and flexible, thus they can be readily adopted by others. Adapting workshop materials is low cost and does not require special equipment. Workshop materials are structured such that they can scale to the size and application of interest to a particular group. The Software Carpentry infrastructure provides support in the form of materials and people. Anyone using workshop materials can directly contribute changes and feedback, which both increases buy-in and improves the materials organically. And finally, local chapters of The Hacker Within create a natural ecosystem of support for workshop participants, their peers, and faculty. 
 
@@ -454,6 +467,114 @@ think of themselves as scientists first and computationalists second),
 and their perception of its utility.  Mid-point results of this
 evaluation will be shared with the instructional designer in order to
 allow evidence-based improvement of the materials.
+
+
+\section{Related Work}
+
+\subsection{Research}\vspace{\hup}
+
+Studies of how scientists use computers and the web have found that
+most scientists learn what they know about developing software and
+using computers and the web in their research through osmosis and word
+of mouth \cite{hannay2009,prabhu2011}. In our experience, most
+training meant to address this issue:
+
+\begin{itemize}
+
+\item
+  does not target scientists' specific needs (e.g., is a general
+  ``Introduction to Computing'' class shared with students majoring in
+  other areas);
+
+\item
+  only covers the mechanics of programming in a particular language
+  rather than giving a complete picture including data management,
+  web-enabled publishing, the ``defense in depth'' approach to
+  correctness discussed in \cite{dubois2005}, or the other
+  foundational skills laid out in \cite{wilson2013}; and/or
+
+\item
+  jumps to advanced topics such as parallel computing before
+  scientists have mastered the foundations.  (Most research on
+  scientific computing, such as \cite{hochstein2005}, does the same.)
+
+\end{itemize}
+
+\subsection{Software Carpentry}\vspace{\hup}
+
+Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
+date to address these issues. Originally created as a training program
+at Los Alamos National Laboratory in the late 1990s, it is now part of
+the Mozilla Science Lab's efforts to help scientists take advantage of
+ways in which the web can change the practice of science today, and
+invent new ways tomorrow.  Over 100 certified volunteer instructors
+delivered two-day intensive workshops to more than 4200 people in 2013
+alone.  Their subject matter usually includes:
+
+\begin{compactitem}
+\item
+  the Unix shell,
+\item
+  version control with Git,
+\item
+  programming in Python or R, and
+\item
+  using SQL.
+\end{compactitem}
+
+What these workshops actually seek to convey, though, is:
+
+\begin{compactitem}
+\item
+  how to automate repetitive tasks,
+\item
+  how to track and share work,
+\item
+  how to grow a program in a modular, testable, reusable way, and
+\item
+  the difference is between structured and unstructured data.
+\end{compactitem}
+
+Software Carpentry's curriculum and teaching practices have been
+refined via iterative design, and are informed by current research on
+teaching and learning best practices.\comment{CONCRETE EXAMPLES?}
+Its instructor-training program
+introduces participants to a variety of modern teaching techniques
+(e.g., peer instruction), to concepts underlying these techniques
+(e.g., cognitive load theory), and to topic-specific work by computing
+education researchers (see \cite{guzdial2010}, \cite{hazzan2011}, and
+the first third of \cite{sorva2012} for overviews.)  One example of
+how they translate theory into practice is their insistence on live coding
+during teaching as a way of demonstrating and transferring authentic
+practice to learners.
+
+Software Carpentry has been assessing learning outcomes and retention
+since the beginning of its Sloan Foundation funding in January 2012.
+The first round of assessment included both qualitative and
+quantitative assessment by Dr.\ Jorge Aranda (then at the University
+of Victoria) and Prof.\ Julie Libarkin (Michigan State University).
+\comment{CAN YOU ADD A SUMMARY OF THOSE ASSESSMENTS?}
+An attempt to scale this up in 2013 was set back by personnel changes,
+but systematic follow-ups with past participants in workshops have now
+been resumed, and we expect to be able to present preliminary results
+by mid-2014.
+
+\subsection{The Hacker Within}\vspace{\hup}
+
+The Hacker Within (THW)\cite{huff2011}, was founded by graduate students in 
+nuclear engineering at the University of Wisconsin to provide a forum for 
+sharing scientific computing skills and best practices with their peers. As it 
+matured as a student organization, it attracted students from many scientific 
+disciplines and academic levels. THW conducted bi-weekly seminars and developed 
+a series of short courses addressing programming languages C++, Python, and 
+Fortran, and best practices such as version control and test-driven code 
+development, as well as basic skills such as UNIX mobility. This curriculum was 
+delivered primarily as interactive short workshops on campuses and during 
+scientific conferences. Many previous founders of the Hacker Within have since 
+become instructors with Software Carpentry and a new generation of THW graduate 
+students has begun to emerge in their place. In 2013, new branches of THW were 
+begun at the University of Melbourne and the University of California - 
+Berkeley.  
 
 \section{Broader Impact}
 
@@ -525,8 +646,30 @@ their exposure to career paths outside of academia. Because the
 faculty mentors will have strong computational backgrounds themselves,
 they can fill this void for computationally-minded students.
 
-\section{Data Management Plan}
 
+
+%%%  END PROJECT NARRATIVE   (15 page limit)
+% --------------- Excluded from page limitations
+\appendix
+
+\newpage
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\footnotesize References\,---\,\arabic{page}}
+
+% ------------------------------------------------------------------- References
+\small
+
+\bibliographystyle{plain}
+\bibliography{./proposal}
+
+% ------------------------------------------------------------------- Data management plan (2 pages max)
+\newpage
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\footnotesize Data management\,---\,\arabic{page}}
+
+\section*{Data Management Plan}
+
+\subsection*{Human-subjects data}\vspace{\hup}
 This project will collect human subjects data consisting of background
 demographics (including age, gender, ethnicity, field of study, and
 prior computing experience), career information (including
@@ -566,7 +709,9 @@ further governed by the University of California - Berkeley's policies
 pertaining to intellectual property, record retention, and data
 management.
 
-\bibliographystyle{plain}
-\bibliography{proposal}
+\subsection*{Educational materials}\vspace{\hup}
+[[ Add here a paragraph about the learning objects that will be created
+and how these will be shared openly on the web, how they will be
+version-controlled, etc. Mention the provisions for re-use, license, etc.]]
 
 \end{document}
