@@ -1,21 +1,101 @@
-\documentclass[11pt]{article}
+\documentclass{proposalnsf}
+% This class file has been tweaked to death by LBarba to fit precisely the 
+% formatting strictures of NSF, while still being rather pretty.
 
-\title{
-  Assessing the Impact of Intensive Software Skills Training
-  on Students' Scientific Careers
-}
 
-\author{
-  Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown,\\   
-  and Paul Wilson\\ 
-  with Ethan White, Tracy Teal, and Greg Wilson
-}
+%--------------------------------------------------------------------  PROCESS WITH XeLaTeX
+\usepackage{fontspec}% provides font selecting commands 
+\usepackage{mdwlist} % reduces spacing in itemize and enumerate
+\usepackage{xunicode}% provides unicode character macros 
+\usepackage{xltxtra} % provides some fixes/extras 
+\setromanfont[Mapping=tex-text,
+                 SmallCapsFont={Palatino},
+                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+\setsansfont[Scale=0.85]{Trebuchet MS} 
+\setmonofont[Scale=0.85]{Monaco}
 
+\renewcommand{\captionlabelfont}{\bf\sffamily}
+\usepackage[hang,flushmargin]{footmisc} 
+% 'hang' flushes the footnote marker to the left,  'flushmargin'  flushes the text as well.
+
+
+
+% Define the color to use in links:
+\definecolor{linkcol}{rgb}{0.459,0.071,0.294}
+\definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
+\definecolor{propcol}{rgb}{0.75,0.0,0.04}
+
+\definecolor{blue}{rgb}{0,0,0}
+\definecolor{green}{rgb}{0.5,0.5,0.5}
+\definecolor{gray}{rgb}{0.25,0.25,0.25}
+\definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
+
+
+
+\usepackage[
+    xetex,
+    pdftitle={NSF proposal},
+    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, and Greg Wilson},
+    pdfpagemode={UseOutlines},
+    pdfpagelayout={TwoColumnRight},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    pdfstartview={FitH},
+    colorlinks, linkcolor={sectcol},citecolor={sectcol},urlcolor={sectcol}
+    ]{hyperref}
+
+%% Define a new style for the url package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+
+
+\addto\captionsamerican{%
+  \renewcommand{\refname}%
+    {References Cited}%
+} % solution found here: http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
+
+\def\baselinestretch{1}
+\setlength{\parindent}{0mm} \setlength{\parskip}{0.8em}
+
+\newlength{\up}
+\setlength{\up}{-4mm}
+
+\newlength{\hup}
+\setlength{\hup}{-2mm}
+
+\sectionfont{\large\bfseries\color{sectcol}\vspace{-2mm}}
+\subsectionfont{\normalsize\it\bfseries\vspace{-4mm}}
+\subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
+\paragraphfont{\bfseries}
+% ---------------------------------------------------------------------
 \begin{document}
-\maketitle
-\pagebreak
 
-\section{Summary}
+% ----------------------  PROJECT SUMMARY - 1 page max - write in 3rd person
+
+
+% Small title with normal-size font:
+\begin{center}
+
+\large\textbf{Assessing the Impact of Intensive Software Skills Training
+  on Students' Scientific Careers}
+
+{\large \sf Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson\\ 
+  with Ethan White, Tracy Teal, and Greg Wilson}
+
+\end{center}
+
+
+
+\textbf{Overview:}
 
 Computers are now ubiquitous in scientific research, but many
 researchers in science, technology, engineering, and mathematics
@@ -58,7 +138,36 @@ to raise both standards and expectations.  The result will be
 researchers who are better able to contribute to science tomorrow as
 well as today.
 
-\pagebreak
+\textbf{Intellectual merit:}  MUST INCLUDE SEPARATE PARAGRAPH.
+
+\textbf {Broader impacts:}  ALSO ON THIS ...
+
+
+\renewcommand{\thepage} {\footnotesize Project Summary}
+
+\newpage
+
+% ----------------------  end SUMMARY 
+
+
+% ----------------------  TECHNICAL PROPOSAL starts here ... Maximum 15 pages
+\pagestyle{plain}
+% reset page numbering to 1 
+\pagenumbering{arabic}
+\renewcommand{\thepage} {\arabic{page}}
+
+\begin{center}
+\small{PROJECT DESCRIPTION}
+
+% Small title with normal-size font
+
+\large\textbf{Assessing the Impact of Intensive Software Skills Training
+  on Students' Scientific Careers}
+
+{\large \sf Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson\\ 
+  with Ethan White, Tracy Teal, and Greg Wilson}
+
+\end{center}
 
 \section{The Problem}
 
