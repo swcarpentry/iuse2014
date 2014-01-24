@@ -10,4 +10,4 @@ proposal.pdf : proposal.tex
 	${LATEX} proposal
 
 clean :
-	@rm -f *~ *.aux *.bbl *.blg *.log
+	@rm -f *~ *.aux *.bbl *.blg *.log *.out
