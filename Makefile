@@ -3,7 +3,7 @@ BIBTEX = bibtex
 
 all : proposal.pdf
 
-proposal.pdf : proposal.tex
+proposal.pdf : proposal.tex proposal.bib
 	${LATEX} proposal
 	${BIBTEX} proposal
 	${LATEX} proposal
