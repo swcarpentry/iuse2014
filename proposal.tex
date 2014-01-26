@@ -4,15 +4,15 @@
 
 
 %--------------------------------------------------------------------  PROCESS WITH XeLaTeX
-\usepackage{fontspec}% provides font selecting commands 
-\usepackage{paralist}       % compactitem environment
-\usepackage{xunicode}% provides unicode character macros 
-\usepackage{xltxtra} % provides some fixes/extras 
-\setromanfont[Mapping=tex-text,
-                 SmallCapsFont={Palatino},
-                 SmallCapsFeatures={Scale=0.85}]{Palatino}
-\setsansfont[Scale=0.85]{Trebuchet MS} 
-\setmonofont[Scale=0.85]{Monaco}
+%\usepackage{fontspec}% provides font selecting commands 
+%\usepackage{paralist}       % compactitem environment
+%\usepackage{xunicode}% provides unicode character macros 
+%\usepackage{xltxtra} % provides some fixes/extras 
+%\setromanfont[Mapping=tex-text,
+%                 SmallCapsFont={Palatino},
+%                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+%\setsansfont[Scale=0.85]{Trebuchet MS} 
+%\setmonofont[Scale=0.85]{Monaco}
 
 \renewcommand{\captionlabelfont}{\bf\sffamily}
 \usepackage[hang,flushmargin]{footmisc} 
@@ -31,9 +31,9 @@
 
 
 \usepackage[
-    xetex,
+    %xetex,
     pdftitle={NSF proposal},
-    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, and Greg Wilson},
+    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, Greg Wilson, and Katy Huff},
     pdfpagemode={UseOutlines},
     pdfpagelayout={TwoColumnRight},
     bookmarks, bookmarksopen,bookmarksnumbered={True},
@@ -110,7 +110,7 @@ reproducible way.  This lack of foundational skills impedes their
 ability to do research, and prevents them from engaging with new
 opportunities in open and web-enabled science.
 
-This project will train STEM undergraduates in these skills, and to
+This project will train STEM undergraduates in these skills, and
 assess the impact of that training on their productivity and career
 paths.  We will do this by adapting the workshops run by Software
 Carpentry for researchers at the graduate level and above to
@@ -128,7 +128,7 @@ another specifically aimed at students from minority groups that are
 under-represented in STEM.
 
 Together, these workshops will reach over 2000 students during the
-course of the project.  Participants will then serve as the treatment
+course of the project.  Participants will serve as the treatment
 population for a five-year study by a full-time professional
 researcher in educational assessment, who will explore the impact of
 this training on their careers in general, and their involvement with
@@ -140,7 +140,7 @@ Our main contribution to knowledge will be an assessment of ways in
 which training of this kind can accelerate the careers of participants
 and the science they do.  We will discover whether students who
 receive this training are more likely than their peers to continue to
-graduate school than their peers, to incorporate open science and/or
+graduate school, to incorporate open science and/or
 web-enabled science tools and practices into their work, to choose
 computationally oriented research topics and/or careers, and/or to
 develop new computational tools and practices.  We will also determine
@@ -187,7 +187,7 @@ aids national economic competitiveness.
 \large\textbf{The Impact of Intensive Software Skills Training on Students' Scientific Careers}
 
 {\large \sf Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson\\ 
-  with Ethan White, Tracy Teal, and Greg Wilson}
+  with Ethan White, Tracy Teal, Greg Wilson, and Katy Huff}
 
 \end{center}
 
@@ -260,7 +260,7 @@ systematic way to improve the training programs that currently exist.
 
 \section{Proposed Work}
 
-This proposal builds on the success to date of the Software Carpentry
+This proposal builds on the success to date of the Software Carpentry (see Section~\ref{sec:SC})
 workshops in enhancing the skills of graduate students, post-docs, and
 faculty.  We propose to:
 
@@ -287,7 +287,7 @@ NSF's Research Experience for Undergraduates (REU) program, at or near
 the start of those students' time in the lab.  We expect this training
 will help them be more productive during their research (graduate-level
 participants in our existing workshops typically report that what we
-teach saves them a day a week), and also prepare them to work in a
+teach saves them a day per week), and also prepare them to work in a
 world where all aspects of science are increasingly dependent on
 computing.
 
@@ -302,10 +302,10 @@ participants.
 \subsection{Workshops}
 
 We will run two-day workshops at a steadily increasing number of sites
-each year for four years, timed to coincide with the start of the
+each year for five years, timed to coincide with the start of the
 summer influx of undergraduate research students.  Each workshop will
 be offered to a minimum of 40 learners per site (giving us a target
-study population of 1440 students by year 4).  The content will be
+study population of at least 2200 students by year 5).  The content will be
 tailored to meet local needs, but will be based on what is being used
 at that time by Software Carpentry and affiliated educational efforts.
 By design, it is straightforward to adapt workshop materials and
@@ -638,6 +638,7 @@ training meant to address this issue:
 \end{compactitem}
 
 \subsection{Software Carpentry}
+\label{sec:SC}
 
 Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
 date to address these issues. Originally created as a training program
