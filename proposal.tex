@@ -4,15 +4,15 @@
 
 
 %--------------------------------------------------------------------  PROCESS WITH XeLaTeX
-%\usepackage{fontspec}% provides font selecting commands 
-%\usepackage{paralist}       % compactitem environment
-%\usepackage{xunicode}% provides unicode character macros 
-%\usepackage{xltxtra} % provides some fixes/extras 
-%\setromanfont[Mapping=tex-text,
-%                 SmallCapsFont={Palatino},
-%                 SmallCapsFeatures={Scale=0.85}]{Palatino}
-%\setsansfont[Scale=0.85]{Trebuchet MS} 
-%\setmonofont[Scale=0.85]{Monaco}
+\usepackage{fontspec}% provides font selecting commands 
+\usepackage{paralist}       % compactitem environment
+\usepackage{xunicode}% provides unicode character macros 
+\usepackage{xltxtra} % provides some fixes/extras 
+\setromanfont[Mapping=tex-text,
+                 SmallCapsFont={Palatino},
+                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+\setsansfont[Scale=0.85]{Trebuchet MS} 
+\setmonofont[Scale=0.85]{Monaco}
 
 \renewcommand{\captionlabelfont}{\bf\sffamily}
 \usepackage[hang,flushmargin]{footmisc} 
@@ -31,7 +31,7 @@
 
 
 \usepackage[
-    %xetex,
+    xetex,
     pdftitle={NSF proposal},
     pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, Greg Wilson, and Katy Huff},
     pdfpagemode={UseOutlines},
@@ -313,16 +313,16 @@ contribute changes back to the Software Carpentry organization.  These
 features enhance the portability and flexibility of the workshops, and
 increase the likelihood of wide dissemination beyond this project.
 
-The home sites for investigators named in this proposal (Michigan
-State University, Utah State University, George Washington University,
+The home sites for investigators named in this proposal (George Washington University, Michigan
+State University, 
 University of California -- Berkeley, and University of Wisconsin --
-Madison) will run workshops in each of those years.  Other sites will
+Madison, Utah State University) will run workshops in each of those years.  Other sites will
 be added each year, increasing the total to 15 in year 5, which
 increases the size of our study population.  We will focus expansion
 on NSF REU sites \cite{nsfreu}, but as detailed in the next section,
 we will also offer some workshops to other communities.
 
-While there is, as mentioned above, considerable scope for customizing
+While there is considerable scope for customizing
 workshops to accommodate learners' prior experience and
 discipline-specific needs, a typical workshop devotes roughly half a
 day to each of these four topics:
@@ -355,8 +355,8 @@ practices a researcher needs to be \emph{computationally competent}
 
 All of the workshop instructors will have been trained and certified
 by Software Carpentry, and will have had experience teaching this
-material prior to engaging in this particular workshops.  Just as
-importantly, all will themselves be working scientists who use these
+material prior to engaging in these particular workshops.  Just as
+importantly, all instructors will themselves be working scientists who use these
 skills and concepts daily in their own research, and are therefore
 able both to serve as role models and to deal with unanticipated
 questions or challenges based on personal experience (e.g.,
@@ -374,19 +374,19 @@ the United States and one in Europe).  This work will build on that
 experience, and draw on the pool of instructors who have gained
 mentoring experience through those specific workshops.
 
-Finally, we will organize workshops in years 2--5 specifically aimed
+Finally, we will organize workshops in years 2 through 5 specifically aimed
 at students from minority groups that are underrepresented in STEM.
 We are already in contact with the Computing Alliance for
 Hispanic-Serving Institutions (CAHSI), and with the Association of
 Public and Land-grant Universities' program for historically black
 colleges and universities (HBCUs); Software Carpentry is running its
-first workshop at an HBCU (Spelman) in early 2014, and we expect to
-have expanded these efforts by the start of this project.
+first workshop at an HBCU (Spelman College) in early 2014, and we expect to
+have significantly expanded these efforts by year two of this project.
 
 \subsection{Assessment}
 
 We will employ an expert in educational assessment full-time for five
-years to monitor and compare undergraduate participants in these
+years to monitor and compare undergraduate participants in these software carpentry skills building
 workshops, participants in a subset of our regular (graduate-level)
 workshops, and non-participants (as a control population).  As part of
 their work, this person will be responsible not only for collecting
@@ -438,13 +438,13 @@ faculty supervisors (i.e., whether there is knowledge transfer
 sideways and upward), and at the effectiveness of the community
 building and dissemination activities detailed in the next sections.
 
-As with our work to date (discussed below), assessment will use both
+As with Software Carpentry's work to date (discussed below), assessment will use both
 qualitative and quantitative techniques.  On the qualitative side, we
 will conduct a series of interviews over the five-year period of the
 study to see how attitudes, aspirations, and activities change.
 Quantitatively, we will measure uptake of key tools such as version
 control as a proxy for adoption of related practices, as well as
-exploring more traditional measures of research success such as
+exploring more traditional measures of research success, such as
 progression to graduate school and publication/citation rates.
 
 Our findings, and any new methods or measures developed, will be
@@ -455,7 +455,7 @@ journals and high-profile conferences, as discussed below.
 
 We will employ one graduate student part-time at each participating
 site each year to provide technical support to workshop participants,
-and to act as an anchor for a Hacker Within-style grassroots group at
+and to act as an anchor for a Hacker Within-style (see Section \ref{sec:THW}) grassroots group at
 that site.  These community liaisons will not be study subjects, but
 will help us stay in touch with students who are (a key requirement
 for any longitudinal study).
@@ -463,7 +463,7 @@ for any longitudinal study).
 Separately, the Mozilla Science Lab will focus part of its ongoing
 community engagement efforts on the students who have taken part in
 our workshops during both the remainder of their undergraduate careers
-and afterward in order to ensure that they become part of the broader
+and afterward to help them become part of the broader
 open science community.  This may include helping the students
 organize and run workshops of their own in subsequent years,
 connecting them with other open science projects, introducing them to
@@ -471,14 +471,14 @@ potential graduate supervisors who understand and value their new
 skills and outlook, etc.
 
 As a subordinate part of their work, the researcher employed by this
-project will assess the effectiveness of these local organizers.  In
+project will assess the effectiveness of the local graduate student organizers.  In
 particular, they will explore whether seeding activity in this way
 leads to the formation of self-sustaining grassroots groups, and if
 so, what activities those groups develop on their own, how (and how
 effectively) they share discoveries with each other, the extent to
 which alumni of this program stay engaged with these groups, and
 whether the presence of these groups has a demonstrable impact on
-students' career paths in general, and their engagement with open and
+students' career paths in general, and/or on their engagement with open and
 web-enabled science in particular.
 
 While it will not be feasible to bring all of the students
@@ -593,18 +593,17 @@ duties for the Software Carpentry program more generally.
 \subsection{Theoretical Positioning}
 
 Our theory of action is straightforward: if students are explicitly
-taught these skills in a way that makes them seem both useful and
+taught software carpentry skills in a way that makes them seem both useful and
 important, they are likely to begin using them in day-to-day work,
-which will create a positive feedback cycle leading to them acquiring
-more (and more advanced) skills on their own, which in turn will
-result in them being more likely to engage in open and web-enabled
+which will create a positive feedback cycle leading to them acquire
+more (and more advanced) skills on their own. This positive feedback cycle will in turn result in the students being more likely to engage in open and web-enabled
 scientific activities that would otherwise have been unknown,
-incomprehensible, or out of reach.  Using the terminology of
-\cite{guidelines}, our work is therefore primarily \emph{design and
-  development research}: we are attempting to develop solutions to
-achieve related to student engagement and mastery of specific skills,
-drawing on existing evidence (from our graduate-level workshops) to
-design and iteratively develop interventions, and ready to begin
+incomprehensible, or out of reach.  
+
+Using the terminology of
+\cite{guidelines}, our work is primarily \emph{design and
+  development research}. We plan to design and develop solutions related to student engagement and mastery of specific skills,
+drawing on existing evidence from Software Carpentry's graduate-level workshops, and investigating their impact and effectiveness. Further, we further plan to design and iteratively develop interventions. We are ready to begin
 collecting data on the feasibility of implementing solutions in
 typical delivery settings.
 
@@ -625,7 +624,7 @@ training meant to address this issue:
 
 \item
   only covers the mechanics of programming in a particular language
-  rather than giving a complete picture including data management,
+  rather than giving a complete picture, including data management,
   web-enabled publishing, the ``defense in depth'' approach to
   correctness discussed in \cite{dubois2005}, or the other
   foundational skills laid out in \cite{wilson2013}; and/or
@@ -641,7 +640,7 @@ training meant to address this issue:
 \label{sec:SC}
 
 Software Carpentry \cite{swcsite,wilson2012} is the largest effort to
-date to address these issues. Originally created as a training program
+date to address issues surrounding inadequate software carpentry skill training for students. Originally created as a training program
 at Los Alamos National Laboratory in the late 1990s, it is now part of
 the Mozilla Science Lab's efforts to help scientists take advantage of
 ways in which the web can change the practice of science today, and
@@ -681,7 +680,7 @@ development skills.
 
 Prof.\ Libarkin performed a more detailed assessment of participants
 in a workshop held there, which was attended remotely by students from
-the University of Texas at Austin. 85\% of participants reported that
+the University of Texas at Austin. Eighty-five percent of participants reported that
 they learned what they hoped to learn, 81\% changed their
 computational understanding, and 96\% said they would recommend the
 workshop to others.
@@ -692,26 +691,26 @@ been resumed, and we expect to be able to present preliminary results
 by mid-2014.
 
 \subsection{The Hacker Within}
+\label{sec:THW}
 
-The Hacker Within (THW)\cite{huff2011}, was founded by graduate students in 
-nuclear engineering at the University of Wisconsin to provide a forum for 
-sharing scientific computing skills and best practices with their peers. As it 
+The Hacker Within (THW) \cite{huff2011}, was founded by graduate students in 
+nuclear engineering at the University of Wisconsin -- Madison to provide a forum for 
+sharing scientific computing skills and best practices with their peers. As THW 
 matured as a student organization, it attracted students from many scientific 
-disciplines and academic levels. THW conducted bi-weekly seminars and developed 
-a series of short courses addressing programming languages C++, Python, and 
-Fortran, and best practices such as version control and test-driven code 
-development, as well as basic skills such as UNIX mobility. This curriculum was 
+disciplines and academic levels. THW conducted bi-weekly seminars, and developed 
+a series of short courses addressing the programming languages C++, Python, and 
+Fortran; best practices such as version control and test-driven code 
+development; and basic skills such as UNIX mobility. This curriculum was 
 delivered primarily as interactive short workshops on campuses and during 
 scientific conferences. Many previous founders of the Hacker Within have since 
-become instructors with Software Carpentry and a new generation of THW graduate 
+become instructors with Software Carpentry, and a new generation of THW graduate 
 students has begun to emerge in their place. In 2013, new branches of THW were 
-begun at the University of Melbourne and the University of California - 
+initiated at the University of Melbourne and the University of California - 
 Berkeley.  
 
 \section{Broader Impact}
 
-We believe this work will have significant impact in several related
-areas.
+We believe this work will have significant impact in several areas beyond directly improving the computational science skills of workshop participants.
 
 \begin{enumerate}
 
@@ -720,7 +719,7 @@ areas.
   optional in any part of science: even scientists who don't think of
   themselves as doing computational work rely on computers to prepare
   papers, store data, and collaborate with colleagues.  The better
-  their computing skills are, the better able they will be to
+  their computing skills are, the better prepared they will be to
   contribute to the research that underpins the nation's economic
   competitiveness.
 
@@ -747,7 +746,7 @@ areas.
     minorities.} The disproportionately low participation of women and
   some minority groups in STEM is well documented, as is the fact that
   computing is one of the least diverse fields within STEM.  This
-  second fact creates a vicious circle: people with weaker computing
+  second fact creates a vicious cycle: people with weaker computing
   skills may be less competitive in research than their peers, which
   reduces their participation in activities viewed as non-core, which
   in turn results in them having weaker skills.  This project will
@@ -767,13 +766,13 @@ graduate student or undergraduates are having, and to provide active
 mentoring on how to train students in computational approaches.
 
 In addition to engaging with the graduate students on their mentoring
-of the undergraduates, the faculty mentors will also serve as a
+of the undergraduates, the faculty mentors will also serve as
 mentors for computational aspects of the graduate students' research
 and careers. In many areas of science, computationally-minded students
 are located in labs where the PIs do not have strong computational
 backgrounds. This means that they do not have a mentor to teach them
 about good computational practice in research. In addition, they do
-not have someone to discuss computational careers with, thus limiting
+not have someone with whom to discuss computational careers, thus limiting
 their exposure to career paths outside of academia. Because the
 faculty mentors will have strong computational backgrounds themselves,
 they can fill this void for computationally-minded students.
@@ -807,7 +806,7 @@ This project will collect human subjects data consisting of background
 demographics (including age, gender, ethnicity, field of study, and
 prior computing experience), career information (including
 undergraduate and/or graduate education, publication histories, and
-industrial experience), and degree and kind of participation in open
+industrial experience), and extent and kind of participation in open
 and web-enabled science projects and communities.  This data will be
 used to determine what impact the training provided by this project
 has on participants' careers and productivity.
@@ -821,7 +820,7 @@ California - Berkeley Review Board.  To ensure confidentiality, each
 subject will be assigned an arbitrary code, which will be associated
 with all data relating to that subject.  One file that contains the
 correspondence between subject names and codes will be kept in an
-encrypted password-controlled file accessible only to the PI and
+encrypted, password-controlled file accessible only to the PI and
 assessment researcher.  The de-identified electronic data will be
 preserved on DVDs and external hard drives.
 
