@@ -1,25 +1,97 @@
+\documentclass{proposalnsf}
+% This class file has been tweaked to death by LBarba to fit precisely the 
+% formatting strictures of NSF, while still being rather pretty.
 
-\documentclass[11pt]{article}
+%%--------------------------------------------------------------------  PROCESS WITH XeLaTeX
+%\usepackage{fontspec}% provides font selecting commands 
+%\usepackage{paralist}       % compactitem environment
+%\usepackage{xunicode}% provides unicode character macros 
+%\usepackage{xltxtra} % provides some fixes/extras 
+%\setromanfont[Mapping=tex-text,
+%                 SmallCapsFont={Palatino},
+%                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+%\setsansfont[Scale=0.85]{Trebuchet MS} 
+%\setmonofont[Scale=0.85]{Monaco}
 
-\title{Postdoctoral Mentoring Plan - Berkeley}
+\renewcommand{\captionlabelfont}{\bf\sffamily}
+\usepackage[hang,flushmargin]{footmisc} 
+% 'hang' flushes the footnote marker to the left,  'flushmargin'  flushes the text as well.
 
-\newcommand{\fixme}[2]{FIXME (#1): {#2}}
+% Define the color to use in links:
+\definecolor{linkcol}{rgb}{0.459,0.071,0.294}
+\definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
+\definecolor{propcol}{rgb}{0.75,0.0,0.04}
+
+\definecolor{gray}{rgb}{0.25,0.25,0.25}
+\definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
+
+\usepackage[
+    %xetex,
+    pdftitle={NSF proposal},
+    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, Greg Wilson, and Katy Huff},
+    pdfpagemode={UseOutlines},
+    pdfpagelayout={TwoColumnRight},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    pdfstartview={FitH},
+    colorlinks, linkcolor={sectcol},citecolor={sectcol},urlcolor={sectcol}
+    ]{hyperref}
+
+%% Define a new style for the url package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+
+
+\addto\captionsamerican{%
+  \renewcommand{\refname}%
+    {References Cited}%
+} % solution found here: http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
+
+\def\baselinestretch{1}
+\setlength{\parindent}{0mm} \setlength{\parskip}{0.8em}
+
+\newlength{\up}
+\setlength{\up}{-4mm}
+
+\newlength{\hup}
+\setlength{\hup}{-2mm}
+
+\sectionfont{\large\bfseries\color{sectcol}\vspace{-2mm}}
+\subsectionfont{\normalsize\it\bfseries\vspace{-4mm}}
+\subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
+\paragraphfont{\bfseries}
+
+%\title{Postdoctoral Mentoring Plan - Berkeley}
+%
+%\newcommand{\fixme}[2]{FIXME (#1): {#2}}
 
 \begin{document}
-\maketitle
-\pagebreak
+%\maketitle
+%\pagebreak
 
-This proposal requests funds for one postdoc who will work primarily at the
-University of California – Berkeley to train graduate student instructors and
-leaders at all sites. The University of California - Berkeley has an array of
+\begin{center}
+\large\textbf{Postdoctoral Mentoring Plan - Berkeley}
+\end{center}
+
+This proposal requests funds for one postdoc who will work primarily at University of California, Berkeley (UCB) to train graduate student instructors and
+leaders at all sites. UCB has an array of
 well-established opportunities and resources for the professional and career
 development of Postdoctoral Researchers. In addition to the oldest postdoctoral
-association in the nation, the University of California – Berkeley has a strong
+association in the nation, UCB has a strong
 infrastructure of support and oversight of the mutual responsibilities between
 postdoctoral researchers and their mentors. A description of the main
 responsibilities in this policy follows.
 
-\paragraph{Mentor: } The supervising faculty member is expected to be a mentor to the
+\paragraph{Mentor:} The supervising faculty member is expected to be a mentor to the
 postdoctoral appointee, providing training and supervision. The supervisor will
 provide the Postdoctoral Scholar with the final goals and expectations upon
 which the Postdoctoral Scholar’s progress will be based. Accordingly, the
@@ -37,9 +109,10 @@ Additionally, mentors have the responsibility to provide an appropriate
 educational experience that helps to advance the career of the postdoctoral
 appointee and to share their knowledge about available development
 opportunities. 
-\paragraph{Postdoctoral Researcher: } Postdoctoral Scholars are appointed with the expectation that they will have a full time involvement in scholarly pursuits and will do so in accordance with all regulations that apply. The postdoctoral appointee is expected to 1. Fulfill specific research and training objectives; 2. Conform with ethical research standards of the University; 3. Comply with all relevant federal, state and municipal regulations and guidelines that relate to the use of hazardous materials; 4. Comply with all relevant University policies; and 5. Record and document research results appropriately. This proposal requests part-time support for one postdoctoral researcher for the duration of the project.  
 
-\paragraph{Procedures: } The mentor (Berkeley PI) will meet on daily to weekly basis with the Postdoc. The Postdoc has the opportunity to attend all collaboration meetings.
+\paragraph{Postdoctoral Researcher:} Postdoctoral Scholars are appointed with the expectation that they will have full time involvement in scholarly pursuits and will do so in accordance with all regulations that apply. The postdoctoral appointee is expected to (1) Fulfill specific research and training objectives; (2) Conform with ethical research standards of the University; (3) Comply with all relevant federal, state and municipal regulations and guidelines that relate to the use of hazardous materials; (4) Comply with all relevant University policies; and (5) Record and document research results appropriately. This proposal requests part-time support for one postdoctoral researcher for the duration of the project.  
+
+\paragraph{Procedures:} The mentor (Berkeley PI) will meet on daily to weekly basis with the Postdoc. The Postdoc has the opportunity to attend all collaboration meetings.
 The mentor is available to help the Postdoc hone skills in oral presentation, and assist with job placement at the end of the appointment, in particular by providing CV reviews and by providing detailed and effective letters of reference. Subsequent success will be monitored by the mentor, and assistance given when needed.
 In addition, the Visiting Scholar and Postdoctoral Affairs office offers courses on writing skills, speaking, grant preparation, ethics, and other subjects, free of charge, of which Postdocs are encouraged to take advantage. Courses on successful interviewing techniques and job offer negotiations are also available. The level of services and courses offered to Postdocs by U.C. Berkeley Visiting Scholar and Postdoctoral Affairs Office are outstanding and unique.
 
