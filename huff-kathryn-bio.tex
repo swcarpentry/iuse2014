@@ -1,0 +1,261 @@
+% Upper-case    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+% Lower-case    a b c d e f g h i j k l m n o p q r s t u v w x y z
+% Digits        0 1 2 3 4 5 6 7 8 9
+% Exclamation   !           Double quote "          Hash (number) #
+% Dollar        $           Percent      %          Ampersand     &
+% Acute accent  '           Left paren   (          Right paren   )
+% Asterisk      *           Plus         +          Comma         ,
+% Minus         -           Point        .          Solidus       /
+% Colon         :           Semicolon    ;          Less than     <
+% Equals        =           Greater than >          Question mark ?
+% At            @           Left bracket [          Backslash     \
+% Right bracket ]           Circumflex   ^          Underscore    _
+% Grave accent  `           Left brace   {          Vertical bar  |
+% Right brace   }           Tilde        ~
+
+%
+% NSF Biographical Sketch: Dr. Kathryn D. Huff
+%
+% Copyright (c) 2013 by Kathryn D. Huff
+% All rights reserved.
+%
+
+\documentclass[svgnames,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\renewcommand\thesection{(\alph{section})}
+\renewcommand\thesubsection{(\alph{subsection})}
+
+\usepackage{calc}
+
+\usepackage{lastpage}
+%\newcommand{\pageoflastpage}{Page {\thepage} of \pageref*{LastPage}}
+%\newcommand{\pageoflastpage}{{\thepage} of \pageref*{LastPage}}
+\newcommand{\pageoflastpage}{}
+
+% Redefine the plain pagestyle for the title page
+\makeatletter
+\let\oldps@plain\ps@plain
+\renewcommand{\ps@plain}{\oldps@plain%
+\renewcommand{\@evenfoot}{\hfil\pageoflastpage\hfil}%
+\renewcommand{\@oddfoot}{\@evenfoot}}
+\makeatother
+
+% Use fancy for non-title pages
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\cfoot{\pageoflastpage}
+\pagestyle{fancy}
+
+\usepackage{xspace}
+
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{varioref}
+\usepackage[%
+        colorlinks=true,urlcolor=,
+        pdfpagelabels=true,hypertexnames=true,
+        plainpages=false,naturalnames=true,
+        ]{hyperref}
+%
+\usepackage{url}
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin={\bibhang+\widthof{[9]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=\textbf{\arabic*.},leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+\title{%
+        \vspace{-2\baselineskip}
+            \normalsize
+            Biographical Sketch\\
+            {\large\textbf{Dr.~Kathryn D.~Huff}}\\
+            \vspace{0.5\baselineskip}
+            \hrule
+            \vspace{0.5\baselineskip}
+            Department of Nuclear Engineering, University of California - Berkeley,
+            e-mail: \href{mailto:huf@berkeley.edu}{huff@berkeley.edu},
+            tel: +1-281-734-1342
+        \vspace{-1.5ex}
+        }
+\date{}
+\author{}
+
+\hypersetup{%
+        pdfsubject={NSF Biographical Sketch of Dr.~Kathryn D.~Huff},
+        pdfauthor={Dr. Kathryn D.~Huff},
+        pdftitle={NSF Biographical Sketch of Dr.~Kathryn D.~Huff},
+        pdfkeywords={}
+        }
+
+\newcommand{\ie}{i.e.\xspace}
+\newcommand{\eg}{e.g.\xspace}
+
+\begin{document}
+
+\maketitle
+\vspace{-4\baselineskip}
+
+\subsection{Professional Preparation}
+
+    The University of Chicago, Chicago, IL;
+        Physics;
+        B.S., 2004
+        \\
+    The University of Wisconsin, Madison, WI;
+        Nuclear Engineering;
+        Ph.D., 2013
+        \\
+    The University of California, Berkeley, CA;
+        Nuclear Engineering;
+        Postdoctoral Researcher, 2013--present
+        \\
+
+\subsection{Appointments}
+
+\begin{itemize}[label={\quad 9999--9999:},leftmargin=*,itemsep=0pt]
+
+    \item[2013--present:]
+        \textbf{Postdoctoral Scholar},
+        Nuclear Science and Security Consortium,
+        The University of California - Berkeley,
+        Berkeley, CA
+
+    \item[2011--2013:]
+      \textbf{Laboratory Graduate Fellow},
+        Used Fuel Disposition Campaign,
+        Argonne National Laboratory,
+        Argonne, IL
+
+    \item[2010:]
+        \textbf{Laboratory Graduate Researcher},
+        Fuel Cycle Options Campaign,
+        Idaho National Laboratory,
+        Idaho Falls, ID
+
+    \item[2008--2011:]
+        \textbf{Graduate Research Assistant},
+        Computational Nuclear Engineering Research Group,
+        University of Wisconsin - Madison,
+        Madison, WI
+
+    \item[2005--2008:]
+      \textbf{Undergraduate Research Assistant},
+        Kavli Institute for Cosmological Physics,
+        The University of Chicago,
+        Chicago, IL
+
+    \item[2006:]
+      \textbf{Undergraduate Research Assistant},
+        Physics Department,
+        University of Chile, 
+        Santiago, CHILE
+
+    \item[2003-2004:]
+      \textbf{Undergraduate Research Assistant},
+        Los Alamos Neutron Science Center, LANSCE--3,
+        Los Alamos National Laboratory,
+        Los Alamos, NM
+
+\end{itemize}
+
+\subsection{Products}
+
+\begin{bibenum}[itemsep=5pt]
+   \item Aruliah,~D.A., Brown,~C.T., Chue Hong,~N.P., Davis,~M., Guy,~R.T., 
+          Haddock,~S.H.D., \textbf{Huff,~K.}, Mitchell,~I., Plumbley,~M., Waugh,~B., 
+          White,~E.P., Wilson,~G.V., and Wilson,~P.P.H.  ``Best Practices For 
+          Scientific Computing.'' \textsl{PLOS Biology}, Vol 1, Issue 12, 2014. 
+          arXiv:1210.0530 [cs.MS].
+\end{bibenum}
+
+\subsection{Synergistic Activities}
+
+\begin{bibenum}[itemsep=4pt]
+
+    \item \textbf{Conference service:}
+        (i) Technical Program Co-Chair for the Scientific Computing with Python 
+        Conference (SciPy), Austin, TX, July 8-10, 2014
+        (ii) Technical Program Co-Chair for the Scientific Computing with Python 
+        Conference (SciPy), Austin, TX, June 15, 2013
+
+    \item \textbf{Community service:}
+        (i) Workshop Organizer for Software Carpentry, 2011.
+        (ii) Author, panelist, The inSCIght Scientific Computing Podcast.
+
+    \item \textbf{Mentoring:}
+        (i) Mentoring graduate student software projects in the Reactor Design, 
+        Neutronics, and Computational Methods group. 2013--present.  
+        (ii) Co-Founder, President, The Hacker Within Scientific Computing Group, 
+        Peer driven skill sharing. 2009-2010.
+
+    \item \textbf{Teaching:}
+        (i) Instructor, Curriculum Developer, and Workshop Organizer for 
+        Software Carpentry, 2011 -- present.
+
+
+\end{bibenum}
+
+\subsection{Collaborators \& Other Affiliations}
+
+\begin{bibsection}
+    \item \textbf{Collaborators and Co-Editors:}
+      \emph{The University of Wisconsin}:
+            Paul P.H Wilson;
+            Matthew J. Gidden;
+            Anthony M. Scopatz;
+            Robert W. Carlsen;
+      \emph{The University of California - Berkeley}:
+            Jasmina A. Vujic;
+            Per F. Peterson;
+            Ehud Greenspan;
+            Massimiliano Fratoni;
+            David L. Krumwiede;
+            Charalampos Andreades;
+            Anselmo T. Cisneros;
+            Lakshana Huddar;
+            Michael R. Laufer;
+            Madicken Munk;
+            Raluca O. Scarlat;
+            Jeffrey E. Seifried;
+            Nicolas Zweibaum;
+      \emph{Lawrence Livermore National Laboratory}:
+            Harris Greenberg;
+      \emph{Software Carpentry}:
+            Gregory V. Wilson;
+    \item \textbf{Graduate Advisers and Postdoctoral Sponsors:}
+        \emph{The University of Wisconsin}:
+            Paul P.H. Wilson;
+        \emph{Argonne National Laboratory}:
+            W. Mark Nutt;
+            Temitope A. Taiwo;
+        \emph{University of California - Berkeley}:
+            Jasmina Vujic;
+            Per F. Peterson;
+            Massimiliano Fratoni;
+    \item \textbf{Thesis Adviser and Postgraduate-Scholar Sponsor:}
+        Total graduate students: 0; Total postgraduate scholars: 0.
+
+\end{bibsection}
+
+\end{document}
