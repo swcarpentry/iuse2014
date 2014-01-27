@@ -1,30 +1,130 @@
-\documentclass[11pt]{article}
+\documentclass{proposalnsf}
+% This class file has been tweaked to death by LBarba to fit precisely the 
+% formatting strictures of NSF, while still being rather pretty.
 
-\usepackage[top=0.75in, bottom=0.75in, left=1in, right=1in]{geometry}
-\pagestyle{empty}
-\usepackage{tabu}
+%%--------------------------------------------------------------------  PROCESS WITH XeLaTeX
+%\usepackage{fontspec}% provides font selecting commands 
+%\usepackage{paralist}       % compactitem environment
+%\usepackage{xunicode}% provides unicode character macros 
+%\usepackage{xltxtra} % provides some fixes/extras 
+%\setromanfont[Mapping=tex-text,
+%                 SmallCapsFont={Palatino},
+%                 SmallCapsFeatures={Scale=0.85}]{Palatino}
+%\setsansfont[Scale=0.85]{Trebuchet MS} 
+%\setmonofont[Scale=0.85]{Monaco}
+
+\renewcommand{\captionlabelfont}{\bf\sffamily}
+\usepackage[hang,flushmargin]{footmisc} 
+% 'hang' flushes the footnote marker to the left,  'flushmargin'  flushes the text as well.
+
+% Define the color to use in links:
+\definecolor{linkcol}{rgb}{0.459,0.071,0.294}
+\definecolor{sectcol}{rgb}{0.63,0.16,0.16} % {0,0,0}
+\definecolor{propcol}{rgb}{0.75,0.0,0.04}
+
+\definecolor{gray}{rgb}{0.25,0.25,0.25}
+\definecolor{ngreen}{rgb}{0.7,0.7,0.7} % a darker shade of green
+
+\usepackage[
+    %xetex,
+    pdftitle={NSF proposal},
+    pdfauthor={Rachel Slaybaugh, Kaitlin Thaney, Lorena Barba, C. Titus Brown, Paul Wilson, Ethan White, Tracy Teal, Greg Wilson, and Katy Huff},
+    pdfpagemode={UseOutlines},
+    pdfpagelayout={TwoColumnRight},
+    bookmarks, bookmarksopen,bookmarksnumbered={True},
+    pdfstartview={FitH},
+    colorlinks, linkcolor={sectcol},citecolor={sectcol},urlcolor={sectcol}
+    ]{hyperref}
+
+%% Define a new style for the url package that will use a smaller font.
+\makeatletter
+\def\url@leostyle{%
+  \@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\small\ttfamily}}}
+\makeatother
+%% Now actually use the newly defined style.
+\urlstyle{leo}
+
+
+% this handles hanging indents for publications
+\def\rrr#1\\{\par
+\medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
+\hangindent=4em\hangafter=1#1}}}
+
+
+\addto\captionsamerican{%
+  \renewcommand{\refname}%
+    {References Cited}%
+} % solution found here: http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
+
+\def\baselinestretch{1}
+\setlength{\parindent}{0mm} \setlength{\parskip}{0.8em}
+
+\newlength{\up}
+\setlength{\up}{-4mm}
+
+\newlength{\hup}
+\setlength{\hup}{-2mm}
+
+\sectionfont{\large\bfseries\color{sectcol}\vspace{-2mm}}
+\subsectionfont{\normalsize\it\bfseries\vspace{-4mm}}
+\subsubsectionfont{\normalsize\mdseries\itshape\vspace{-4mm}} %\itshape
+\paragraphfont{\bfseries}
+
+%\usepackage[top=0.75in, bottom=0.75in, left=1in, right=1in]{geometry}
+%\pagestyle{empty}
+%\usepackage{tabu}
 
 \begin{document}
-\section*{Equipment and Other Resources }
 
-This section of the proposal is used to assess the adequacy of the resources available to perform the effort
-proposed to satisfy both Intellectual Merit and Broader Impacts review criteria. Proposers should describe only
-those resources that are directly applicable. Proposers should include an aggregated description of the internal
-and external resources (both physical and personnel) that the organization and its collaborators will provide to
-the project, should it be funded. Such information must be provided in this section, in lieu of other parts of the
-proposal (e.g., budget justification, project description). The description should be narrative in nature and must
-not include any quantifiable financial information. Reviewers will evaluate the information during the merit review
-process and the cognizant NSF Program Officer will review it for programmatic and technical sufficiency.
+\begin{center}
+\large\textbf{Facilities, Equipment and Other Resources}
+\end{center}
 
+\textbf{University of California, Berkeley}
 
-Although these resources are not considered cost sharing as defined in 2 CFR section 215.23 (OMB Circular A-110),
-the Foundation does expect that the resources identified in the Facilities, Equipment, and Other Resources
-section will be provided, or made available, should the proposal be funded. AAG Chapter II.B.1 specifies
-procedures for use by the awardee when there are postaward changes to objective, scope or methodology.
+In addition to the workshop resources listed below, the following facilities and equipment will be provided by the University of California, Berkeley (UCB):
+%
+\begin{compactitem}
+\item The facility and audio-visual (A/V) equipment for the annual meeting of project participants.
+\item Meeting space for UCB's the Hacker Within group.
+\end{compactitem}
 
+Beyond these direct resources, UCB hosts many organizations that will provide natural points of collaboration for this project, such as Berkeley Institute for Data Science (BIDS), D-Lab, and Berkeley Initiative for Transparency in the Social Sciences (BITTS). 
 
-If there are no Facilities, Equipment and Other Resources to describe, a statement to that effect should
-be included in this section of the proposal and uploaded into FastLane.
+D-Lab has sent a letter of support offering
+%
+\begin{compactitem}
+\item Space, outreach, and assistance in locating and supporting the assessment position.
+\item D-Lab's platform to recruit other partners, particularly in developing and implementing assessment strategies and tools, and to offer public presentations or trainings.
+\item To develop further concrete ways to support this proposal's trainings and assessments. 
+\end{compactitem}
 
+%--------------------------------------------------------------
+\textbf{Workshop Locations}
+
+All locations hosting workshops, which includes the five universities participating in this proposal and the additional sites that will be identified, will provide the facilities and equipment for hosting the workshops:
+%
+\begin{compactitem}
+\item Presentation room(s) of sufficient size to host the workshop (at least 40 students).
+\item A/V equipment for hosting the workshop.
+\item A local point of contact to facilitate workshop organization.
+\end{compactitem}
+
+%--------------------------------------------------------------
+\textbf{Other Participating Universities}
+
+In addition to the workshop resources listed above, the four partner universities, George Washington University, Michigan State University, University of Wisconsin -- Madison and Utah State University, will provide: 
+%
+\begin{compactitem}
+\item Project administrative support.
+\item Meeting space for the local Hacker Within-style group.
+\end{compactitem}
+
+%--------------------------------------------------------------
+\textbf{Mozilla}
+
+\begin{compactitem}
+\item 
+\end{compactitem}
 
 \end{document}
