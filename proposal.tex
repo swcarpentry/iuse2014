@@ -51,7 +51,6 @@
 \medskip\hbox{\vbox{\parindent=2em\hsize=6.12in
 \hangindent=4em\hangafter=1#1}}}
 
-
 \addto\captionsamerican{%
   \renewcommand{\refname}%
     {References Cited}%
@@ -82,6 +81,7 @@
 % Uncomment lines below to change from visible to invisible comments.
 %\renewcommand{\important}[1]{}
 %\renewcommand{\comment}[1]{}
+\usepackage{tabu}
 
 \begin{document}
 
@@ -223,11 +223,11 @@ increase the likelihood of wide dissemination beyond this project.
 
 The home sites for investigators named in this proposal (George
 Washington University, Michigan State University, University of
-California -- Berkeley, and University of Wisconsin -- Madison, and
+California -- Berkeley, University of Wisconsin -- Madison, and
 Utah State University) will run workshops in each of those years.
 Other sites will be added each year, increasing the total to 15 in
 year 5, which increases the size of our study population.  We will
-focus expansion on NSF REU sites \cite{nsfreu}, but as detailed in
+focus expansion on NSF REU sites \cite{nsfreu} but, as detailed in
 Section~\ref{sec:diversity}, we will also offer some workshops to
 other communities.
 
@@ -237,6 +237,8 @@ by the National Science Foundation.  The Software Carpentry workshops
 proposed here will be valuable to that consortium in meeting its goals
 of increasing the number and diversity of researchers using advanced
 cyberinfrastructure, and of developing data science practitioners.
+
+If we find there are more sites interested in hosting workshops than we are planning to support in a given year, we will select the subset of sites at which we could have the largest impact (those that have weaker native computational science resources) and/or that contribute most to our goal of increasing diversity.
 
 \subsection{Curriculum: From Tools to Techniques to Concepts}
 
@@ -271,6 +273,36 @@ practices a researcher needs to be \emph{computationally competent}
   how to create, use, and share structured data.
 \end{compactitem}
 
+For context, Table~\ref{table:schedule} shows a sample schedule from a workshop hosted at Stanford in January 2014 that was focused on Python.
+
+\begin{table}
+\caption{Sample Software Carpentry Workshop Schedule}
+\begin{center}
+\begin{tabu}[h]{l l}
+\textbf{Day 1} & \\ \hline
+9:00 - 9:30 & Introduction \\
+9:30 - 11:00 & The Shell \\
+11:00 - 11:15 & coffee \\
+11:15 - 12:30 & Version control with git \\
+12:30 - 1:30 & lunch \\
+1:30 - 2:30 & More git \\
+2:30 - 3:15 & Programming in Python \\
+3:15 - 3:30 & coffee \\
+3:30 - 5:00 & More Python \\ 
+& \\
+\textbf{Day 2} & \\ \hline
+9:00 - 11:00 & Scientific computing in Python \\
+11:00 - 11:15 & coffee \\
+11:15 - 12:30 & More Scientific computing in Python \\
+12:30 - 1:30 & lunch \\
+1:30 - 3:15 & Software validation and testing \\
+3:15 - 3:30 & coffee \\
+3:30 - 5:00 & Reproducible research workflow \\
+\end{tabu}
+\end{center}
+\label{table:schedule}
+\end{table}
+
 All of the workshop instructors will have been trained and certified
 by Software Carpentry, and will have had experience teaching this
 material prior to engaging in these particular workshops.  Just as
@@ -278,7 +310,7 @@ importantly, all instructors will themselves be working scientists who use these
 skills and concepts daily in their own research, and are therefore
 able both to serve as role models and to deal with unanticipated
 questions or challenges based on personal experience (e.g.,
-\cite{ram2013}).
+\cite{ram2013}).  Software Carpentry has a rich network of trained instructors, often recruited through word-of-mouth or involvement in the open software community, who volunteer as workshop instructors based on workshop location and personal availability.
 
 \subsection{Increasing Diversity: Changing the Odds for Underrepresented Scientists}
 \label{sec:diversity}
@@ -293,8 +325,7 @@ the United States and one in Europe).  This work will build on that
 experience, and draw on the pool of instructors who have gained
 mentoring experience through those specific workshops.
 
-Finally, we will organize workshops in years 2 through 5 specifically aimed
-at students from minority groups that are underrepresented in STEM.
+Finally, we will organize workshops in years 2 through 5 specifically aimed at students from minority serving institutions.
 We are already in contact with the Computing Alliance for
 Hispanic-Serving Institutions (CAHSI), and with the Association of
 Public and Land-grant Universities' program for historically black
@@ -769,7 +800,7 @@ they can fill this void for computationally-minded students.
 
 To be added.
 
-%%%  END PROJECT NARRATIVE   (15 page limit)
+%%  END PROJECT NARRATIVE   (15 page limit)
 % --------------- Excluded from page limitations
 \appendix
 
