@@ -105,20 +105,20 @@
 
 \end{center}
 
-\section{The Problem: Elusive Computational Competence in Science}
+\section{The Problem: Computational Competence in Science}
 
 Scientists and engineers invented electronic computers to accelerate
 their work, but two generations later, many researchers in science,
 technology, engineering, and mathematics (STEM) are still not
 \emph{computationally competent}: they do repetitive tasks manually
 instead of automating them, develop software using a methodology best
-summarized as ``copy, paste, tweak, and pray'', and fail to track
+summarized as ``copy, paste, tweak, and pray'' and fail to track
 their work in any systematic, reproducible way.
 
 While the World-Wide Web was created by a scientist to help his
 peers share information, many still use it primarily as a way to find
 and download PDFs.  Researchers may understand that open data can fuel
-new insights, but often lack the skills needed to create and provide a
+new insights but often lack the skills needed to create and provide a
 reusable data set.  Equally, any discussion of changing scientific
 publishing, making research reproducible, or using the web to support
 ``science as a service'' must eventually address the lack of
@@ -144,7 +144,7 @@ reasons:
 
 \item
   \emph{The blind leading the blind.}  Many faculty lack computational
-  skills themselves, and hence are unable to pass them on.
+  skills themselves and hence are unable to pass them on.
 
 \item
   \emph{Cultural difference.}  Scientists and software developers have
@@ -196,7 +196,7 @@ the start of those students' time in the lab.  Based on data already
 collected from Software Carpentry workshops, we expect this training
 will help them be more productive during their research (graduate-level
 participants in our existing workshops typically report that what we
-teach saves them a day per week), and also prepare them to work in a
+teach saves them a day per week) and will prepare them to work in a
 world where all aspects of science are increasingly dependent on
 computing.
 
@@ -215,19 +215,19 @@ each year for five years, timed to coincide with the start of the
 summer influx of undergraduate research students.  Each workshop will
 be offered to a minimum of 40 learners per site, giving us a target
 study population of at least 2200 students by year 5.  The content will be
-tailored to meet local needs, but will be based on what is being used
+tailored to meet local needs but will be based on what is being used
 at that time by Software Carpentry and affiliated educational efforts.
 By design, it is straightforward to adapt workshop materials and
 contribute changes to the Software Carpentry course material.  These
-features enhance the portability and flexibility of the workshops, and
+features enhance the portability and flexibility of the workshops and
 increase the likelihood of wide dissemination beyond this project.
 
 The home sites for investigators named in this proposal (George
 Washington University, Michigan State University, University of
 California, Berkeley, University of Wisconsin -- Madison, and
 Utah State University) will run workshops in each of those years.
-Other sites will be added each year, increasing the total to 15 in
-year 5, which increases the size of our study population.  We will
+Other sites will be added each year, expanding the total to 15 in
+year 5 and accordingly increasing the size of our study population.  We will
 focus expansion on NSF REU sites \cite{nsfreu} but, as detailed in
 Section~\ref{sec:diversity}, we will also offer some workshops to
 other communities.
@@ -237,7 +237,7 @@ the ``Condo of Condos'' consortium, recently recommended for funding
 by the National Science Foundation.  The Software Carpentry workshops
 proposed here will be valuable to that consortium in meeting its goals
 of increasing the number and diversity of researchers using advanced
-cyberinfrastructure, and of developing data science practitioners.
+cyberinfrastructure and of developing data science practitioners.
 
 Beyond this consortium, we will recruit sites for hosting workshops by identifying locations at which we could have the largest impact and/or that contribute most to our goal of increasing diversity. If we find there are more sites interested in hosting workshops than we are able to support in a given year, we will select the subset of sites that best meet our goals.
 
@@ -261,83 +261,111 @@ practices a researcher needs to be \emph{computationally competent}
   how to grow a program in a modular, testable, reusable way.
 \end{compactitem}
 
-With these objectives, the base workshop format will be divided in to four modules.  All workshops will be hands-on so that learners can ``learn by doing" and have concrete examples and experience. A typical workshop devotes roughly half of a day to each of these four modules:
+With these objectives, the base workshop format will be divided in to
+four modules.  All workshops will be hands-on so that learners can
+``learn by doing'' and have experience with concrete examples. A
+typical workshop will devote roughly half of a day to each of the
+following:
 
 \begin{enumerate}
 
-\item Working with Data - this module will begin with a spreadsheet program in which participants will learn how to organize, analyze, and export data.  Learners will work with data representative of their field of study.  By the end of this module, learners will be able to sort data, conduct calculations, and export data to more generic file types, such as tab-delimited.  This module sets the stage for learning to work with data outside of a spreadsheet for automation, data parsing, databases, data sharing, and more sophisticated statistical analyses.
+\item Working with Data: this module will begin with a spreadsheet
+  program in which participants will learn how to organize, analyze,
+  and export data.  Learners will work with data representative of
+  their field of study.  By the end of this module, learners will be
+  able to sort data, conduct calculations, and export data to more
+  generic file types, such as tab-delimited.  This module sets the
+  stage for learning to work with data outside of a spreadsheet for
+  automation, data parsing, databases, data sharing, and more
+  sophisticated statistical analyses.
 
-\item Automation, the Unix Sshell - this module will introduce learners to the shell; teach how to view, search, and manipulate text files at the command line; and introduce basic automation at the command line.
+\item Automation, the Unix Shell: this module will introduce learners
+  to the shell; teach how to view, search, and manipulate text files
+  at the command line; and introduce basic automation at the command
+  line.
 
-\item Automation, Introductory Programming - this module teaches learners introductory Python or R.  Learners will be able to write short scripts and work in the programming environments iPythonNotebook or RStudio.  Learners will experience the potential of programming to automate analysis and data processing.  This module will also teach a way of thinking about computation, with loops, if-then, and for statements, that is essential for computational competency and a true understanding of the potential for computation in research.
+\item Automation, Introductory Programming: this module teaches
+  learners introductory Python or R.  Learners will be able to write
+  short scripts and work in IPython Notebook, RStudio, or similar
+  environments.  Learners will experience the potential of programming
+  to automate analysis and data processing.  This module will also
+  teach key ideas---iteration, conditional statements, and
+  modularity---that are essential for computational competency.
 
-\item Version Control and Data Sharing - this module teaches learners how to keep track of their data and analyses in an open and reproducible way.  The lessons will focus on data management strategies as well as provide an introduction to GitHub for version control of scripts, programs, analyses , etc.
+\item Version Control and Data Sharing: this module teaches learners
+  how to keep track of their code, data, and analyses in an open and
+  reproducible way.  The lessons will focus on data management
+  strategies as well as provide an introduction to GitHub for version
+  control of scripts, programs, analyses , etc.
+
 \end{enumerate}
-%
+
 For context, Table~\ref{table:schedule} shows a sample workshop schedule.
 
 \begin{table}
-\caption{Sample Software Carpentry Workshop Schedule}
 \begin{center}
-\begin{tabu}[h]{l l}
-\textbf{Day 1} & \\ \hline
-9:00 - 9:30 & Introduction \\
-9:30 - 10:45 & Working with Data - data manipulation in spreadsheets \\
-10:45 - 11:00 & coffee \\
-11:00 - 12:00 & Working with Data (cont.) - data manipulation in spreadsheets and data export \\
-12:00 - 1:00 & lunch \\
-1:00 - 2:45 & The Unix Shell - fundamentals and text manipulation \\
-2:45 - 3:00 & coffee \\
-3:00 - 4:30 & The Unix Shell - scripts and automation (cont.) \\ 
-& \\
-\textbf{Day 2} & \\ \hline
-9:00 - 10:30 & Introductory Programming - the programming environment and data types \\
-10:30 - 10:45 & coffee \\
-10:45 - 12:00 & Introductory Programming (cont.) - automation and analysis with scripts  \\
-12:00 - 1:00 & lunch \\
-1:00 - 2:45 & Version Control with Git - keeping track of versions of scripts  \\
-2:45 - 3:00 & coffee \\
-3:00 - 4:30 & Data Management and Reproducible Research
+\begin{tabu}[h]{l l l l}
+\multicolumn{4}{c}{\textbf{Day 1}} \\
+9:00 &-& 9:30 & Introduction \\
+9:30 &-& 10:45 & Working with Data: data manipulation in spreadsheets \\
+10:45&-& 11:00 & coffee \\
+11:00&-& 12:00 & Working with Data (cont.): data export \\
+12:00&-& 1:00 & lunch \\
+1:00 &-& 2:45 & The Unix Shell: fundamental conceptss and the pipe-and-filter model \\
+2:45 &-& 3:00 & coffee \\
+3:00 &-& 4:30 & The Unix Shell (cont.): scripts, loops, and automation \\ 
+& & & \\
+\multicolumn{4}{c}{\textbf{Day 2}} \\
+9:00 &-& 10:30 & Introductory Programming: simple data manipulation \\
+10:30&-& 10:45 & coffee \\
+10:45&-& 12:00 & Introductory Programming: control flow and modularization \\
+12:00&-& 1:00 & lunch \\
+1:00 &-& 2:45 & Version Control: backup and provenance \\
+2:45 &-& 3:00 & coffee \\
+3:00 &-& 4:30 & Data Management and Reproducible Research
 \end{tabu}
 \end{center}
 \label{table:schedule}
+\caption{Sample Software Carpentry Workshop Schedule}
 \end{table}
 
-As the module descriptions suggest, our real aim isn't to
-teach Python, Git, or any other specific tool: it's to teach
+As the module descriptions suggest, our real aim isn't to teach
+Python, Git, or any other specific tool: it's to teach
 \emph{computational competence}. We can't do this in the abstract:
 people won't show up for a hand-waving talk, and even if they do, they
 won't understand. If we show them how to solve a specific problem with
 a specific tool, though, we can then lead into a larger discussion of
 how scientists ought to develop, use, and curate software.
 
-These workshops strive to show people how the pieces fit together: how to write a
-Python script that fits into a Unix pipeline, how to automate unit
-tests, etc. Doing this gives us a chance to reinforce ideas, and also
-increases the odds of participants being able to apply what they've learned
-once the workshop is over.
+These workshops strive to show people how the pieces fit together: how
+to write a Python script that fits into a Unix pipeline, how to
+automate unit tests, etc. Doing this gives us a chance to reinforce
+ideas and also increases the odds of participants being able to apply
+what they've learned once the workshop is over.
 
 \subsection{Execution: Quality Instruction}
+
 We will aim for no more than 40 people per room at a workshop, so that
 every learner can receive personal attention when needed.  Where
-possible, we will run two or more rooms side by side, and use a
-pre-assessment questionnaire (see Section~\ref{sec:questionnaire} for an excerpt of currently-used questions) as a sorting hat to stream learners by
-prior experience, which simplifies teaching and improves their
-experience.  %We will not shuffle people from one room to
-%another between the first and second day: with the best
-%inter-instructor coordination in the world, it still results in
-%duplication, missed topics, and jokes that make no sense.
+possible, we will run two or more rooms side by side and use a
+pre-assessment questionnaire (see Section~\ref{sec:questionnaire} for
+an excerpt of currently-used questions) as a sorting hat to group
+learners by prior experience, which simplifies teaching and improves
+their experience.
 
 All of the workshop instructors will have been trained and certified
-by Software Carpentry, and will have had experience teaching this
+by Software Carpentry and will have had experience teaching this
 material prior to engaging in these particular workshops.  Just as
-importantly, all instructors will themselves be working scientists who use these
-skills and concepts daily in their own research, and are therefore
-able both to serve as role models and to deal with unanticipated
-questions or challenges based on personal experience (e.g.,
-\cite{ram2013}). 
+importantly, instructors will themselves be working scientists. By
+virtue of using these skills and concepts daily in their own research
+they are better able both to serve as role models and to deal with
+unanticipated questions or challenges based on personal experience
+(e.g., \cite{ram2013}).
 
-Software Carpentry has a rich network of trained instructors, often recruited from past workshops. These instructors are volunteers who participate for reasons including making the world a better place, increasing diversity in the pipeline, making their own lives better, and because it's fun. 
+Software Carpentry has a rich network of trained instructors, often recruited 
+from past workshops. These instructors are volunteers who participate for a 
+variety of reasons including sharpening their own teaching and computing skills, 
+increasing diversity in the pipeline, and because it's fun. 
 
 As well as instructors, we will rely on local helpers to wander the room and
 answer questions during practicals. These helpers may be participants in
@@ -356,12 +384,12 @@ June 2013, attracted 120 participants; its second is scheduled for
 Lawrence Berkeley National Laboratory in April 2014, and at least two
 more will be held by the time work on this project commences (one in
 the United States and one in Europe).  This work will build on that
-experience, and draw on the pool of instructors who have gained
+experience and draw on the pool of instructors who have gained
 mentoring experience through those specific workshops.
 
 Finally, we will organize workshops in years 2 through 5 specifically aimed at students from minority serving institutions.
 We are already in contact with the Computing Alliance for
-Hispanic-Serving Institutions (CAHSI), and with the Association of
+Hispanic-Serving Institutions (CAHSI) and with the Association of
 Public and Land-grant Universities' program for historically black
 colleges and universities (HBCUs). Software Carpentry is running its
 first workshop at an HBCU (Spelman College) in early 2014, and we expect to
@@ -386,7 +414,7 @@ years to monitor and compare undergraduate participants in these
 software carpentry skills building workshops, participants in a subset
 of our regular (graduate-level) workshops, and non-participants (as a
 control population).  As part of their work, this person will be
-responsible not only for collecting and analyzing data, but also for
+responsible not only for collecting and analyzing data but also for
 refining and extending the methods and measures used to gauge impact. D-Lab (Section \ref{sec:dlab}) will assist in locating and supporting this expert.
 
 Assessment will build on previous work (see Section~\ref{sec:pastAssessment}), focusing particularly, but not exclusively, on the following questions:
@@ -394,7 +422,7 @@ Assessment will build on previous work (see Section~\ref{sec:pastAssessment}), f
 \begin{enumerate}
 \item
   Are students who receive this training more likely than their peers
-  to develop new tools and practices, and/or become involved in
+  to develop new tools and practices and/or become involved in
   outreach and education activities (i.e., are they more likely to
   become creators and leaders)?
 
@@ -426,11 +454,11 @@ Assessment will build on previous work (see Section~\ref{sec:pastAssessment}), f
 
 \end{enumerate}
 
-This researcher will also explore ways in which our engagement with
-students changes the outlook and work practices of their peers and
-faculty supervisors (i.e., whether there is knowledge transfer
-sideways and upward), and at the effectiveness of the community
-building and dissemination activities detailed in the next sections. 
+This expert in educational assessment will explore ways in which our
+engagement with students changes the outlook and work practices of
+their peers and faculty supervisors (i.e., whether there is knowledge
+transfer sideways and upward) and the effectiveness of the community
+building and dissemination activities detailed in the next sections.
 
 As with Software Carpentry's work to date,
 assessment will use both qualitative and quantitative techniques.  On
@@ -442,13 +470,14 @@ practices, as well as exploring more traditional measures of research
 success, such as progression to graduate school and
 publication/citation rates. 
 
-To track impact over time we will conduct pre-workshop surveys 
-and interviews roughly in the week before the workshops, and the
-series of post-workshop surveys and interviews beginning approximately 
-one month following the workshop. Follow on surveys and interviews
-will be conducted and the end of the students' lab appointment 
-and annually thereafter (as applicable based on year of participation
-in the project). Sections~\ref{sec:survey} and ~\ref{sec:interview} provide some example survey and interview questions, respectively.
+To track impact over time, we will conduct pre-workshop surveys and
+interviews roughly in the week before the workshops and the series of
+post-workshop surveys and interviews beginning approximately one month
+following the workshop. Follow on surveys and interviews will be
+conducted and the end of the students' lab appointment and annually
+thereafter (as applicable based on year of participation in the
+project). Sections~\ref{sec:survey} and ~\ref{sec:interview} provide
+some example survey and interview questions, respectively.
 
 Our findings, and any new methods or measures developed, will be
 shared with other researchers through publication in peer-reviewed
@@ -457,13 +486,13 @@ journals and high-profile conferences (Section~\ref{sec:pub}).
 \subsection{Community Building: Supporting Computational Competence}
 \label{sec:pub}
 
-We will employ one graduate student part-time at each site named in this proposal each year to provide technical support to workshop participants,
-and to act as an anchor for a Hacker Within-style grassroots group at
-that site (Section~\ref{sec:THW}).  These community liaisons will not
-be study subjects, but will help us stay in touch with students who
-are (a key requirement for any longitudinal study).
-
-ANOTHER PARAGRAPH ABOUT WHAT THIS WILL ACTUALLY LOOK LIKE.
+We will employ one graduate student part-time at each site named in
+this proposal each year to provide technical support to workshop
+participants, and to act as an anchor for a Hacker Within-style
+grassroots group at that site (Section~\ref{sec:THW}).  These
+community liaisons will not be study subjects but will help us stay in
+touch with students who are (a key requirement for any longitudinal
+study).
 
 Separately, the Mozilla Science Lab will focus part of its ongoing
 community engagement efforts on the students who have taken part in
@@ -475,22 +504,21 @@ connecting them with other open science projects, introducing them to
 potential graduate supervisors who understand and value their new
 skills and outlook, etc.
 
-As a subordinate part of their work, the researcher employed by this
-project will assess the effectiveness of the local graduate student
-organizers.  In particular, they will explore whether seeding activity
-in this way leads to the formation of self-sustaining grassroots
-groups, and if so, what activities those groups develop on their own,
-how (and how effectively) they share discoveries with each other, the
-extent to which alumni of this program stay engaged with these groups,
-and whether the presence of these groups has a demonstrable impact on
-students' career paths in general and/or on their engagement with
-open and web-enabled science in particular.
+As a subordinate part of their work, the assessment researcher employed by this 
+project will assess the effectiveness of the local graduate student organizers.  
+In particular, they will explore whether seeding activity in this way leads to 
+the formation of self-sustaining grassroots groups, and if so, what activities 
+those groups develop on their own, how (and how effectively) they share 
+discoveries with each other, the extent to which alumni of this program stay 
+engaged with these groups, and whether the presence of these groups has a 
+demonstrable impact on students' career paths in general and/or on their 
+engagement with open and web-enabled science in particular.
 
 While it will not be feasible to bring all of the students
 participating in a given year's workshops together physically, we will
 organize and run virtual conferences toward the end of their research
 term to give them an opportunity to present their work to one another,
-discuss what they have learned, and build peer-to-peer connections.
+discuss what they have learned and build peer-to-peer connections.
 These conferences will also provide an opportunity to introduce
 participants to new forms of scientific ``publishing'', including
 blogging, the creation of screencasts and demonstration videos, and
@@ -512,7 +540,7 @@ into existing curricula.
 All of the materials produced by and for this project will be made
 freely available under the Creative Commons -- Attribution (CC-BY)
 license.  The instructional designer will work with the Mozilla
-Science Lab and affiliated groups to share these materials, and the
+Science Lab and affiliated groups to share these materials and the
 results of our studies of the program's impact, through science
 education journals, conferences, and other channels. Specifically, we
 plan to publish articles in:
@@ -569,7 +597,7 @@ finally, local chapters of The Hacker Within create a natural
 ecosystem of support for workshop participants, their peers, and
 faculty.
 
-As a subordinate part of their work, the researcher employed by this
+As a subordinate part of their work, the assessment researcher employed by this
 project will assess the extent to which curriculum developed during
 this program is taken up by other educators (particularly those who
 think of themselves as scientists first and computationalists second),
@@ -594,7 +622,7 @@ Dr.\ G.\ Wilson and the half-time instructional designer hired by this
 project will be responsible for preparation and publication of
 learning materials.  Dr.\ G.\ Wilson will also provide instructional
 training for the graduate student assistants and other participants in
-the project on an ongoing basis, and will be responsible for
+the project on an ongoing basis and will be responsible for
 organizing the workshops aimed at students from minority serving institutions.
 
 Workshop operations (such as finding instructors and arranging their
@@ -661,7 +689,7 @@ made significant strides in the past decade.  In particular, our work
 is informed by the long-running research program of Guzdial et al.\ at
 Georgia Tech, who have found that a ``media first'' introduction to
 computing outperforms more conventional alternatives
-\cite{guzdial2013}, and that it is possible to assess the extent to
+\cite{guzdial2013} and that it is possible to assess the extent to
 which programming concepts, rather than merely the syntax of a
 particular programming language, have been mastered \cite{tew2011}.
 
@@ -669,7 +697,7 @@ Others (e.g., \cite{porter2013}) have demonstrated that peer
 instruction is a significantly better way to teach introductory
 programming than conventional classroom approaches.  As discussed in
 the section below, we are already working to incorporate these
-evidence-based approaches into our teaching, and will accelerate these
+evidence-based approaches into our teaching and will accelerate these
 efforts within the scope of this award.
 
 \subsection{Software Carpentry}
@@ -680,13 +708,13 @@ date to address issues surrounding inadequate software carpentry skill
 training for students. Originally created as a training program at Los
 Alamos National Laboratory in the late 1990s, it is now part of the
 Mozilla Science Lab's efforts to help scientists take advantage of
-ways in which the web can change the practice of science today, and
+ways in which the web can change the practice of science today and
 invent new ways tomorrow.  Over 100 certified volunteer instructors
 delivered two-day intensive workshops like those described in Section~\ref{sec:workshops} to more than 4200 people in 2013
 alone.
 
 Software Carpentry's curriculum and teaching practices have been
-refined via iterative design, and are informed by current research on
+refined via iterative design and are informed by current research on
 teaching and learning best practices.  
 
 
@@ -721,52 +749,69 @@ of Victoria) and Prof.\ Julie Libarkin (Michigan State University).
 
 Dr.\ Aranda surveyed and interviewed participants, observed a
 workshop, and analyzed screencasts of participants working through a
-programming assignment. The surveys and interviews were conducted 
-both pre- and post-workshop. The survey asked questions regarding
-the software development habits of respondents, the tools they were familiar with, their level of knowledge of five core Software
-Carpentry topics (shell commands, Python, version control, SQL, and 
+programming assignment. The surveys and interviews were conducted both
+pre- and post-workshop. The survey asked questions regarding the
+software development habits of respondents, the tools they were
+familiar with, their level of knowledge of five core Software
+Carpentry topics (shell commands, Python, version control, SQL, and
 testing concepts), and their challenges in using scientific computing
-to answer their research questions. 
+to answer their research questions.
 
-According to both qualitative and quantitative data,
-Dr.\ Aranda found significant increases in
-participants' understanding and use of shell commands, version control
-tools, Python, and testing techniques. Perhaps more importantly,
-participants reported better proficiency with software tools; greater
-concern for issues of provenance and code quality; better strategies
-to approach software development; and \emph{new research questions} that have
-become accessible thanks to an increase in participants' software
-development skills.
+According to both qualitative and quantitative data, Dr.\ Aranda found
+significant increases in participants' understanding and use of shell
+commands, version control tools, Python, and testing
+techniques. Perhaps more importantly, participants reported better
+proficiency with software tools; greater concern for issues of
+provenance and code quality; better strategies to approach software
+development; and \emph{new research questions} that have become
+accessible thanks to an increase in participants' software development
+skills.
 
-Students also took a ``quiz" consisted of Yes/No questions, that were purposefully chosen so that only about half of them could be answered with the standard material in the workshop; the other half was not covered by workshop instruction. Additionally, a cross-cutting half could be answered with introductory familiarity to the topic in question, while the other half would represent more advanced levels of expertise. %In other words, the quiz was designed so that there were an easy and a hard question answerable through workshop instruction, and an easy and a hard question not answerable through workshop instruction. 
+Students also took a quiz consisting of yes/no questions that were
+purposefully chosen so that only about half of them could be answered
+with the standard material in the workshop; the other half was not
+covered by workshop instruction. Additionally, a cross-cutting half
+could be answered with introductory familiarity to the topic in
+question, while the other half would represent more advanced levels of
+expertise.
 
-The objectives for this were to assess whether participants not only learned the workshop materials, but were exploring the topics in greater depth on their own, and to avoid ceiling effects in our survey. Quiz performance improved across the board (by $\sim$30\%) for all question categories.
+The objectives for this were to assess whether participants not only
+learned the workshop materials but were exploring the topics in
+greater depth on their own, and to avoid ceiling effects in our
+survey. Quiz performance improved across the board (by $\sim$30\%) for
+all question categories.
 
 Prof.\ Libarkin performed a more detailed assessment of participants
-in a workshop held at Michigan State University, which was attended remotely by students from
-the University of Texas at Austin. Prof.\ Libarkin also collected qualitative and quantitative data. Eighty-five percent of participants
-reported that they learned what they hoped to learn, 81\% changed
-their computational understanding, and 96\% said they would recommend
-the workshop to others. 
+in a workshop held at Michigan State University, which was attended
+remotely by students from the University of Texas at Austin.
+Prof.\ Libarkin also collected qualitative and quantitative
+data. Eighty-five percent of participants reported that they learned
+what they hoped to learn, 81\% changed their computational
+understanding, and 96\% said they would recommend the workshop to
+others.
 
 An attempt to scale this up in 2013 was set back by personnel changes,
 but systematic follow-ups with past participants in workshops have now
 been resumed, and we expect to be able to present preliminary results
 by mid-2014.
 
-Some excerpted survey questions from the discussed studies
-can be found in Sectoin~\ref{sec:survey}, and excerpted interview 
-questions from Dr.\ Aranda's study can be found in Section~\ref{sec:interview}. The studies mentioned here and the additional data that will become available within the next six months will serve as a starting point for this project's assessment expert. 
+Some excerpted survey questions from the discussed studies can be
+found in Section~\ref{sec:survey}, and excerpted interview questions
+from Dr.\ Aranda's study can be found in Section~\ref{sec:interview}.
+The studies mentioned here and the additional data that will become
+available within the next six months will serve as a starting point
+for this project's assessment expert.
 
 \subsection{The Hacker Within}
 \label{sec:THW}
 
-The Hacker Within (THW) was founded by graduate students, including Dr.\ Huff and Prof.\ Slaybaugh, in nuclear
-engineering at the University of Wisconsin -- Madison to provide a
-forum for sharing scientific computing skills and best practices with
-their peers \cite{huff2011}. As THW matured as a student organization,
-it attracted students from many scientific disciplines and academic
-levels. THW conducted bi-weekly seminars, and developed a series of
+The Hacker Within (THW) was founded by graduate students, including
+Dr.\ Huff and Prof.\ Slaybaugh, in nuclear engineering at the
+University of Wisconsin -- Madison to provide a forum for sharing
+scientific computing skills and best practices with their peers
+\cite{huff2011}. As THW matured as a student organization, it
+attracted students from many scientific disciplines and academic
+levels. THW conducted bi-weekly seminars and developed a series of
 short courses addressing the programming languages C++, Python, and
 Fortran; best practices such as version control and test-driven code
 development; and basic skills such as UNIX mobility. This curriculum
@@ -775,7 +820,8 @@ during scientific conferences. Many previous founders of the Hacker
 Within have since become instructors with Software Carpentry, and a
 new generation of THW graduate students has begun to emerge in their
 place. In 2013, new branches of THW were initiated at the University
-of Melbourne and the University of California, Berkeley (under the direction of Dr.\ Huff and Prof.\ Slaybaugh).
+of Melbourne and the University of California, Berkeley (under the
+direction of Dr.\ Huff and Prof.\ Slaybaugh).
 
 \subsection{Condo of Condos}
 \label{sec:CofC}
@@ -784,23 +830,37 @@ The ``Condo of Condos'' consortium, led by Clemson University and
 including the University of Wisconsin -- Madison and four other
 campuses during its pilot phase, has recently been recommended for
 funding by the National Science Foundation.  The consortium's primary
-task is to build a network of advanced cyberinfrastructure research
-and education facilitors (ACI-REFs), with goals that include
+task is to build a network of advanced cyber infrastructure research
+and education facilitators (ACI-REFs), with goals that include
 increasing the diversity of researchers using advanced
-cyberinfrastructure on each campus and developing data science
+cyber infrastructure on each campus and developing data science
 practitioners.  The Software Carpentry workshops being designed under
 this proposal will serve those goals directly.  As an investigator on
 both that project and this proposal, Prof.\ P.\ Wilson will engage the
 network of ACI-REFs to share this curriculum with both the initial
-consortium institutions, and any institutions who are able to join in
+consortium institutions and any institutions who are able to join in
 the future.
 
 \subsection{D-Lab}
 \label{sec:dlab}
 
-D-Lab, located at the University of California, Berkeley, has the mission to create cross-disciplinary resources for high-level training and support services for social science researchers campus-wide. It does this by adaptively building new forms of shared infrastructure, including consulting and workshops in research tools and methods, and fostering discovery and connections with the pools of expertise and offerings of Berkeley's departments and professional schools. As a new research unit at Berkeley, D-lab has been actively involved in teaching software tools. D-lab is engaged in evaluating students’ experiences with those trainings and adapting subsequent trainings in response to their evaluations. D-lab is an enthusiastic supporter of campus efforts to broaden this approach to teaching.
+D-Lab, located at the University of California, Berkeley, has the
+mission to create cross-disciplinary resources for high-level training
+and support services for social science researchers campus-wide. It
+does this by adaptively building new forms of shared infrastructure,
+including consulting and workshops in research tools and methods, and
+fostering discovery and connections with the pools of expertise and
+offerings of Berkeley's departments and professional schools. As a new
+research unit at Berkeley, D-lab has been actively involved in
+teaching software tools. D-lab is engaged in evaluating students’
+experiences with those trainings and adapting subsequent trainings in
+response to their evaluations. D-lab is an enthusiastic supporter of
+campus efforts to broaden this approach to teaching.
 
-D-lab will provide space, outreach, and assistance in locating and supporting the assessment position outlined in this proposal. Prof.\ Slaybaugh will engage with D-lab to capitalize on their expertise at the intersection assessment and scientific education. 
+D-lab will provide space, outreach, and assistance in locating and
+supporting the assessment position outlined in this proposal.
+Prof.\ Slaybaugh will engage with D-lab to capitalize on their
+expertise at the intersection assessment and scientific education.
 
 \section{Broader Impact}
 
@@ -847,7 +907,7 @@ participants.
   reduces their participation in activities viewed as non-core, which
   in turn results in them having weaker skills.  This project will
   strive to break this cycle by giving at-risk students an opportunity
-  to ``level up'' in a supportive environment, and by connecting them
+  to ``level up'' in a supportive environment and by connecting them
   with mentors who can serve as role models.
 
 \end{enumerate}
@@ -858,7 +918,7 @@ The graduate students who are serving as mentors for the
 undergraduates at the different universities will each be paired with
 a local faculty mentor. The faculty mentor will meet regularly with
 the graduate student to discuss and problem solve any issues that the
-graduate student or undergraduates are having, and to provide active
+graduate student or undergraduates are having and to provide active
 mentoring on how to train students in computational approaches.
 
 In addition to engaging with the graduate students on their mentoring
@@ -897,11 +957,13 @@ they can fill this void for computationally-minded students.
 \end{compactitem}
 
 \section{Building Blocks: Excerpts from Assessment Tools}
+
 \subsection{Pre-Assessment Questionnaire}
 \label{sec:questionnaire}
+
 The following is a subset of questions from the pre-assessment
 questionnaire administered prior to Software Carpentry workshops. 
-This is used  to gauge participant skill level for so they can be
+This questionnaire is used  to gauge participant skill level for so they can be
 matched with an appropriate level of instruction.
 
 \begin{itemize}
@@ -963,15 +1025,15 @@ matched with an appropriate level of instruction.
     \item I program once a week or more.
   \end{compactitem}
 
-\item
-  What best describes the complexity of your programming? (Choose all
-  that apply.)
-  \begin{compactitem}
-    \item I have never programmed.
-    \item I write scripts to analyze data.
-    \item I write tools to use and that others can use.
-    \item I am part of a team which develops software.
-  \end{compactitem}
+%\item
+%  What best describes the complexity of your programming? (Choose all
+%  that apply.)
+%  \begin{compactitem}
+%    \item I have never programmed.
+%    \item I write scripts to analyze data.
+%    \item I write tools to use and that others can use.
+%    \item I am part of a team which develops software.
+%  \end{compactitem}
 
   \item
     A tab-delimited file has two columns showing the date and the
@@ -1118,15 +1180,15 @@ workshop, as well as the overall workshop on a 5-point Likert scale of Very Poor
 \end{compactitem}
 
 \subsection{Interview Questions}
-\label{sec:survey}
+\label{sec:interview}
 
 The following is a subset of questions from a pre-workshop interview 
 script used in Dr.\ Aranda's assessment research:
 
 \begin{compactitem}
-\item Do you use the shell? How comfortable are you using it? Examples?
+%\item Do you use the shell? How comfortable are you using it? Examples?
 
-\item Do you use Python? How comfortable are you using it? Examples? How about other programming languages? How did you learn to use them?
+%\item Do you use Python? How comfortable are you using it? Examples? How about other programming languages? How did you learn to use them?
 
 \item How do you manage the versions of your code and data? Do you use version control software? For what purpose? How?
 
