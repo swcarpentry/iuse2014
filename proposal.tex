@@ -270,7 +270,7 @@ A typical workshop devotes roughly half of a day to each of these four modules:
   \item The Unix shell - this module will introduce learners to the shell; teach how to view, search, and manipulate text files at the command line; and introduce basic automation at the command line.
   \item Introductory programming - this module teaches learners introductory Python or R.  Learners will be able to write short scripts and work in the programming environments iPythonNotebook or RStudio.  Learners will experience the potential of programming to automate analysis and data processing.  This module will also teach a way of thinking about computation, with loops, if-then, and for statements, that is essential for computational competency and a true understanding of the potential for computation in research.
   \end{enumerate}
-\item Version control and Data Sharing - this module teaches learners how to keep track of their data and analyses in an open and reproducible way.  The lessons will focus on data management strategies as well as provide an introduction to github for version control of scripts, programs, analyses , etc.
+\item Version control and Data Sharing - this module teaches learners how to keep track of their data and analyses in an open and reproducible way.  The lessons will focus on data management strategies as well as provide an introduction to GitHub for version control of scripts, programs, analyses , etc.
 \end{compactitem}
 %
 For context, Table~\ref{table:schedule} shows a sample workshop schedule.
@@ -294,13 +294,37 @@ For context, Table~\ref{table:schedule} shows a sample workshop schedule.
 10:30 - 10:45 & coffee \\
 10:45 - 12:00 & Introductory Programming (cont) - automation and analysis with scripts  \\
 12:00 - 1:00 & lunch \\
-1:00 - 2:45 & Version control with git - keeping track of versions of scripts  \\
+1:00 - 2:45 & Version control with Git - keeping track of versions of scripts  \\
 2:45 - 3:00 & coffee \\
 3:00 - 4:30 & Data management and reproducible research
 \end{tabu}
 \end{center}
 \label{table:schedule}
 \end{table}
+
+As the comments on the bullets above suggest, our real aim isn't to
+teach Python, Git, or any other specific tool: it's to teach
+\emph{computational competence}. We can't do this in the abstract:
+people won't show up for a hand-waving talk, and even if they do, they
+won't understand. If we show them how to solve a specific problem with
+a specific tool, though, we can then lead into a larger discussion of
+how scientists ought to develop, use, and curate software.
+
+These workshops strive to show people how the pieces fit together: how to write a
+Python script that fits into a Unix pipeline, how to automate unit
+tests, etc. Doing this gives us a chance to reinforce ideas, and also
+increases the odds of them being able to apply what they've learned
+once the workshop is over.
+
+We will aim for no more than 40 people per room at a workshop, so that
+every learner can receive personal attention when needed.  Where
+possible, we will run two or more rooms side by side, and use a
+pre-assessment questionnaire (see Section~\ref{sec:questionnaire}) as a sorting hat to stream learners by
+prior experience, which simplifies teaching and improves their
+experience.  We will not shuffle people from one room to
+another between the first and second day: with the best
+inter-instructor coordination in the world, it still results in
+duplication, missed topics, and jokes that make no sense.
 
 All of the workshop instructors will have been trained and certified
 by Software Carpentry, and will have had experience teaching this
@@ -310,6 +334,25 @@ skills and concepts daily in their own research, and are therefore
 able both to serve as role models and to deal with unanticipated
 questions or challenges based on personal experience (e.g.,
 \cite{ram2013}). Software Carpentry has a rich network of trained instructors, often recruited from past workshops, who volunteer as workshop instructors based on workshop location and personal availability. 
+
+As well as instructors, we will rely local helpers to wander the room and
+answer questions during practicals. These helpers may be participants in
+previous workshops who are interested in becoming instructors, grad
+students who've picked up some or all of this on their own, or members
+of the local open source community; where possible, we will aim to have at
+least one helper for every eight learners.
+
+We have found workshops go a lot better if people come in groups (e.g., 4--5
+people from one lab) or have other pre-existing ties (e.g., the same
+disciplinary background). They are less inhibited about asking
+questions, and can support each other (morally and technically) when
+the time comes to put what they've learned into practice after the
+workshop is over. This is one reason why structuring workshops around
+REU summers is likely to have a high impact.
+Group signups also yield much higher turnout from
+groups that are otherwise often under-represented, such as women and
+minority students, since they know in advance that they will be in a
+supportive environment.
 
 \subsection{Increasing Diversity: Changing the Odds for Underrepresented Scientists}
 \label{sec:diversity}
@@ -390,11 +433,19 @@ As with Software Carpentry's work to date (Section~\ref{sec:SC}),
 assessment will use both qualitative and quantitative techniques.  On
 the qualitative side, we will conduct a series of interviews over the
 five-year period of the study to see how attitudes, aspirations, and
-activities change.  Quantitatively, we will measure uptake of key
+activities change. Quantitatively, we will measure uptake of key
 tools such as version control as a proxy for adoption of related
 practices, as well as exploring more traditional measures of research
 success, such as progression to graduate school and
-publication/citation rates.
+publication/citation rates. 
+
+To track impact over time we will conduct pre-workshop surveys 
+and interviews roughly in the week before the workshops, and the
+series of post-workshop surveys and interviews beginning approximately 
+one month following the workshop. Follow on surveys and interviews
+will be conducted and the end of the students' lab appointment 
+and annually thereafter (as applicable based on year of participation
+in the project).
 
 Our findings, and any new methods or measures developed, will be
 shared with other researchers through publication in peer-reviewed
@@ -502,7 +553,7 @@ and at the following conferences:
 \end{compactitem}
 
 The dissemination of this project's curriculum has strong potential to
-be high. Current Software Carpentry materials are available as online lessons and in github. Workshop materials will continue to be open access and flexible, thus they can be readily adopted by others. Adapting workshop materials is
+be high. Current Software Carpentry materials are available as online lessons and in GitHub. Workshop materials will continue to be open access and flexible, thus they can be readily adopted by others. Adapting workshop materials is
 low cost and does not require special equipment. Workshop materials
 are structured such that they can scale to the size and application of
 interest to a particular group. Anyone using
@@ -629,7 +680,21 @@ invent new ways tomorrow.  Over 100 certified volunteer instructors
 delivered two-day intensive workshops to more than 4200 people in 2013
 alone.
 
-Software Carpentry has a strong pool trained instructors from all over the world. All instructors must complete instructor training, which includes instruction in teaching pedagogy as well as specific strategies and best-practices. Evidence of instructor training and experience is based on a Mozilla's Open Badge program \cite{badges2014}. Further levels of expertise are obtained through helping at a workshop, being an instructor, being a lead instructor, and developing workshop materials. All of the participants in this proposal are certified instructors and have taught or will teach Software Carpentry workshops prior to the start of this project. For example, Dr.\ Huff has already taught at 9 workshops and Dr.\ G.\ Wilson has served as an instructor at 35. 
+Software Carpentry has a strong pool trained instructors from all over
+ the world. All instructors must complete instructor training, which 
+takes 2--4 hours/week of their time for
+12--14 weeks (depending on scheduling interruptions), and introduces
+them to the basics of educational psychology, instructional design,
+and how these things apply to teaching programming.
+
+Evidence of instructor training and experience is based on a Mozilla's
+Open Badge program \cite{badges2014}. Further levels of expertise are
+obtained through helping at a workshop, being an instructor, being a 
+lead instructor, and developing workshop materials. All of the 
+participants in this proposal are certified instructors and have 
+taught or will teach Software Carpentry workshops prior to the start
+of this project. For example, Dr.\ Huff has already taught at 9 
+workshops and Dr.\ G.\ Wilson has served as an instructor at 35. 
 
 Software Carpentry's curriculum and teaching practices have been
 refined via iterative design, and are informed by current research on
@@ -803,6 +868,177 @@ they can fill this void for computationally-minded students.
 \subsection{Lorena Barba}
 
 To be added.
+
+\section{Pre-Assessment Questionnaire}
+\label{sec:questionnaire}
+The following is derived from the pre-assessment questionnaire 
+administered prior to Software Carpentry workshops. This is used 
+to gauge participant skill level for room-sorting and content-
+targeting purposes. %This proposal would shift some questions to a slightly lower degree of complexity to reflect the expectation of undergraduate rather than graduate student participants. 
+
+
+\begin{itemize}
+
+\item
+  What is your discipline?
+  \begin{compactitem}
+    \item Space sciences
+    \item Physics
+    \item Chemistry
+    \item Earth sciences (geology, oceanography, meteorology)
+    \item Life science (ecology, zoology, botany)
+    \item Life science (biology, genetics)
+    \item Brain and neurosciences
+    \item Medicine
+    \item Engineering (civil, mechanical, chemical)
+    \item Computer science and electrical engineering
+    \item Economics
+    \item Humanities and social sciences
+    \item Tech support, lab tech, or support programmer
+    \item Administration
+    \item Other:
+  \end{compactitem}
+
+\item
+  In three sentences or less, please describe your current field of
+  work or your research question.
+
+\item
+  What OS will you use on the laptop you bring to the workshop?
+  \begin{compactitem}
+    \item Linux
+    \item Apple OS X
+    \item Windows
+    \item I do not know what operating system I use.
+  \end{compactitem}
+
+\item
+  With which programming languages, if any, could you write a program
+  from scratch that imports some data and calculates the mean and
+  standard deviation of that data?
+  \begin{compactitem}
+    \item C
+    \item C++
+    \item Perl
+    \item MATLAB
+    \item Python
+    \item R
+    \item Java
+    \item Other:
+  \end{compactitem}
+
+\item
+  What best describes how often you currently program?
+  \begin{compactitem}
+    \item I have never programmed.
+    \item I program less than one a year.
+    \item I program several times a year.
+    \item I program once a month.
+    \item I program once a week or more.
+  \end{compactitem}
+
+\item
+  What best describes the complexity of your programming? (Choose all
+  that apply.)
+  \begin{compactitem}
+    \item I have never programmed.
+    \item I write scripts to analyze data.
+    \item I write tools to use and that others can use.
+    \item I am part of a team which develops software.
+  \end{compactitem}
+
+  \item
+    A tab-delimited file has two columns showing the date and the
+    highest temperature on that day. Write a program to produce a
+    graph showing the average highest temperature for each month.
+    \begin{compactitem}
+    \item Could not complete.
+    \item Could complete with documentation or search engine help.
+    \item Could complete with little or no documentation or search engine help.
+    \end{compactitem}
+
+  \item
+    How familiar are you with Git version control?
+    \begin{compactitem}
+    \item Not familiar with Git.
+    \item Only familiar with the name.
+    \item Familiar with Git but have never used it.
+    \item Familiar with Git because I have used or am using it.
+    \end{compactitem}
+
+  \item
+    Consider this task: given the URL for a project on GitHub, check
+    out a working copy of that project, add a file called notes.txt,
+    and commit the change.
+    \begin{compactitem}
+    \item Could not complete.
+    \item Could complete with documentation or search engine help.
+    \item Could complete with little or no documentation or search engine help.
+    \end{compactitem}
+
+  \item
+    How familiar are you with unit testing and code coverage?
+    \begin{compactitem}
+    \item Not familiar with unit testing or code coverage.
+    \item Only familiar with the terms.
+    \item Familiar with unit testing or code coverage but have never used it.
+    \item Familiar with unit testing or code coverage because I have used or am using them.
+    \end{compactitem}
+
+  \item
+    Consider this task: given a 200-line function to test, write half
+    a dozen tests using a unit testing framework and use code coverage
+    to check that they exercise every line of the function.
+    \begin{compactitem}
+    \item Could not complete.
+    \item Could complete with documentation or search engine help.
+    \item Could complete with little or no documentation or search engine help.
+    \end{compactitem}
+
+  \item
+    How familiar are you with SQL?
+    \begin{compactitem}
+    \item Not familiar with SQL.
+    \item Only familiar with the name.
+    \item Familiar with SQL but have never used it.
+    \item Familiar with SQL because I have used or am using them.
+    \end{compactitem}
+
+  \item
+    Consider this task: a database has two tables: Scientist and
+    Lab. Scientist's columns are the scientist's user ID, name, and
+    email address; Lab's columns are lab IDs, lab names, and scientist
+    IDs. Write an SQL statement that outputs the number of scientists
+    in each lab.
+    \begin{compactitem}
+    \item Could not complete.
+    \item Could complete with documentation or search engine help.
+    \item Could complete with little or no documentation or search engine help.
+    \end{compactitem}
+
+  \item
+    How familiar do you think you are with the command line?
+    \begin{compactitem}
+    \item Not familiar with the command line.
+    \item Only familiar with the term.
+    \item Familiar with the command line but have never used it.
+    \item Familiar with the command line because I have or am using it.
+    \end{compactitem}
+
+  \item
+    How would you solve this problem: A directory contains 1000 text
+    files. Create a list of all files that contain the word
+    ``Drosophila'' and save the result to a file called results.txt.
+    \begin{compactitem}
+    \item Could not create this list.
+    \item Would create this list using ``Find in Files'' and ``copy and paste''.
+    \item Would create this list using basic command line programs.
+    \item Would create this list using a pipeline of command line programs.
+    \end{compactitem}
+
+\end{itemize}
+
+
 
 %%  END PROJECT NARRATIVE   (15 page limit)
 % --------------- Excluded from page limitations
